@@ -12,4 +12,4 @@ Postgresql
 Rspec
 
 ## Deployment instructions
-Before using this application, ensure the [Next Stop](https://github.com/Kealii/next_stop_api) API is running.
+Before using this application, ensure the [Next Stop API](https://github.com/Kealii/next_stop_api) is running.
