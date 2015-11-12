@@ -8771,6 +8771,8 @@ button.close {
 }
 /* line 4, /Users/michael_wong/Turing/Module3/Projects/next_stop/app/assets/stylesheets/application.scss */
 body {
-  background-image: url(../../images/union_station.jpg);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6e/FasTracks-Progress-Map-7.1.14Large.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
   padding-top: 70px;
 }
