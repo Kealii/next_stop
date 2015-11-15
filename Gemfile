@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'omniauth-twitter'
 gem 'figaro'
+gem 'simplecov'
 
 # gem 'therubyracer', platforms: :ruby
 # gem 'bcrypt', '~> 3.1.7'
@@ -21,6 +22,8 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
   gem 'factory_girl_rails', '~> 4.0'
+  gem 'database_cleaner'
+  gem 'capybara'
 end
 
 group :development do
