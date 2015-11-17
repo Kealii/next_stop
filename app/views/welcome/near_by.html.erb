@@ -1,15 +1,17 @@
-<h1>
-  Buses for this stop: <%= @stop_name %>
-</h1>
+<h2 class="text-center">Buses for this stop <%= @stop_name %></h2>
 
-<ul>
-  <% @routes.each do |route| %>
-    <li class="stopTime">
-      <div class="stopTime-name">
-        <%= route.short_name %>
-      </div>
-      <div class="stopTime-time">
-      </div>
-    </li>
-  <% end %>
-</ul>
+<div class="container">
+  <div class="well">
+    <ul>
+      <% @routes.each do |route| %>
+        <li class="stopTime">
+          <div class="stopTime-name">
+            <%= route.short_name %>
+          </div>
+          <div class="stopTime-time">
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

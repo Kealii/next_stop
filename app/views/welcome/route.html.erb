@@ -1,21 +1,14 @@
-<h1>
-  Route <%= @route.short_name %>
-</h1>
+<h1 class="text-center">Route <%= @route.short_name %></h1><br>
 <% @trips.each do |trip| %>
   <ul class="trip">
-    <li class="stopTime">
-      <%= trip.service %>
-
-    </li>
     <% trip.stop_times.each do |stop_time| %>
       <li class="stopTime">
         <div class="well">
-          <div class="stopTime-name">
+          <div class="stopTime-name text-center">
             <%= stop_time.name %>
           </div>
-          <div class="stopTime-time">
+          <div class="stopTime-time text-center">
             <%= link_to Time.parse(stop_time.departure_time).strftime('%l:%M %p'), near_by_path(departure_time: stop_time.departure_time, stop_id: stop_time.stop_id) %>
-
           </div>
         </div>
       </li>
