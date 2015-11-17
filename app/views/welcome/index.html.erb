@@ -1,0 +1,4 @@
+<%= form_tag(route_path, method: :get) do %>
+  <%= collection_select :route, :id, @routes, :id, :short_name %>
+  <%= submit_tag 'Submit' %>
+<% end %>

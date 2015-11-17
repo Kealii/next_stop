@@ -7,3 +7,15 @@ body {
   background-repeat: no-repeat;
   padding-top: 70px;
 }
+
+.trip {
+  width: 300px;
+  float: left;
+  .stopTime {
+    list-style: none;
+
+    .stopTime-name {
+      font-weight: bold;
+    }
+  }
+}

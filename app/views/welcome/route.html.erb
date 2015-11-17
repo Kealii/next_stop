@@ -1,0 +1,24 @@
+<h1>
+  Route <%= @route.short_name %>
+</h1>
+<% @trips.each do |trip| %>
+  <ul class="trip">
+    <li class="stopTime">
+      <%= trip.service %>
+
+    </li>
+    <% trip.stop_times.each do |stop_time| %>
+      <li class="stopTime">
+        <div class="well">
+          <div class="stopTime-name">
+            <%= stop_time.name %>
+          </div>
+          <div class="stopTime-time">
+            <%= link_to Time.parse(stop_time.departure_time).strftime('%l:%M %p'), near_by_path(departure_time: stop_time.departure_time, stop_id: stop_time.stop_id) %>
+
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
