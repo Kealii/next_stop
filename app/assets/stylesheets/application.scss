@@ -1,12 +1,6 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-
-body {
-  background-color: skyblue;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding-top: 70px;
-}
+@import 'bootswatch';
 
 .trip {
   width: 300px;
