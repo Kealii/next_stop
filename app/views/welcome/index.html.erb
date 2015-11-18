@@ -6,11 +6,13 @@
   </div>
 
   <div class="well">
-    <%= form_tag(route_path, method: :get) do %>
-      <%= collection_select :route, :id, @routes, :id, :short_name, { prompt: "Please Select a Route."}, class: 'input-sm' %>
-      <br><br>
-      <%= submit_tag 'Submit', class: 'btn btn-primary' %>
-    <% end %>
+    <div class="row text-center">
+      <h3>Please Select a Route</h3>
+      <%= form_tag(route_path, method: :get) do %>
+        <%= collection_select :route, :id, @routes, :id, :short_name, {}, class: 'input-sm' %>
+        <br><br>
+        <%= submit_tag 'Submit', class: 'btn btn-primary' %>
+      <% end %>
+    </div>
   </div>
-
 </div>
