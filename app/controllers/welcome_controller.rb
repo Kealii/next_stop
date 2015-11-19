@@ -1,17 +1,12 @@
 class WelcomeController < ApplicationController
-  NEXT_STOP = "http://localhost:3001/api/v1"
-
   def index
-    response = HTTParty.get("#{NEXT_STOP}/routes")
-    @routes = JSON.parse(response.body).map do |route|
+    @routes = json_body(routes).map do |route|
       Route.new(route['route_id'], route['route_short_name'])
     end
   end
 
   def route
-    route_id = params[:route][:id]
-    response = HTTParty.get("#{NEXT_STOP}/routes/#{route_id}")
-    route_json = JSON.parse(response.body)
+    route_json = json_body(single_route)
     @route = Route.new(route_json['route_id'], route_json['route_short_name'])
 
     @trips = route_json['trips'].first(5).map do |trip_json|
