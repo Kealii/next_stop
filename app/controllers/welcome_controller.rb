@@ -1,5 +1,4 @@
 class WelcomeController < ApplicationController
-  # NEXT_STOP = "http://nextstopapi-1507.herokuapp.com/api/v1"
   NEXT_STOP = "http://localhost:3001/api/v1"
 
   def index
