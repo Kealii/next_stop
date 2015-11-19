@@ -8,8 +8,8 @@
   <div class="well">
     <div class="row text-center">
       <h3>Please Select a Route</h3>
-      <%= form_tag(route_path, method: :get) do %>
-        <%= collection_select :route, :id, @routes, :id, :short_name, {}, class: 'input-sm' %>
+      <%= form_tag(routes_path, method: :get) do %>
+        <%= select_tag :route, options_from_collection_for_select(@routes, ->(route) {"#{route.id}_#{route.short_name}"}, :short_name), class: 'input-sm' %>
         <br><br>
         <%= submit_tag 'Submit', class: 'btn btn-primary' %>
       <% end %>

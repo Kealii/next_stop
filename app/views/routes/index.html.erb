@@ -1,0 +1,53 @@
+<h1 class="text-center">Route <%= @route.short_name %></h1><br>
+<div id="trips">
+  <div class="loading">
+    <h2>Your trips are loading!!!!</h2>
+    <div class="meter animate">
+      <span></span>
+    </div>
+  </div>
+
+</div>
+
+<%= hidden_field_tag "route", route_path(@route.id, format: :json) %>
+
+<script id="tripTemplate" type="text/x-handlebars-template">
+  <ul class="trip"></ul>
+</script>
+
+<script id="stopTimeTemplate" type="text/x-handlebars-template">
+  <li class="stopTime">
+    <div class="well">
+      <div class="stopTime-name text-center">
+        {{name}}
+      </div>
+      <div class="stopTime-time text-center">
+        <a href="{{near_by_path}}">{{departure_time}}</a>
+      </div>
+    </div>
+  </li>
+</script>
+
+<script>
+  var routePath = $('[name=route]').val();
+  var tripTemplate = Handlebars.compile($("#tripTemplate").html());
+  var stopTimeTemplate = Handlebars.compile($("#stopTimeTemplate").html());
+  var tripsElement = $('#trips');
+  $.get(routePath)
+      .success(function (trips) {
+
+        $.each(trips, function (index, trip) {
+          var renderedTrip = $(tripTemplate());
+
+          $.each(trip.stop_times, function(index, stopTime) {
+            var renderedStopTime = stopTimeTemplate(stopTime);
+            renderedTrip.append($(renderedStopTime));
+          });
+
+          tripsElement.append(renderedTrip);
+          $('.loading').hide();
+        });
+
+      });
+</script>
+
