@@ -1,7 +1,11 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  NEXT_STOP = "http://nextstopapi-1507.herokuapp.com/api/v1"
+  if Rails.env.test?
+    NEXT_STOP = "http://localhost:3001/api/v1"
+  else
+    NEXT_STOP = "http://nextstopapi-1507.herokuapp.com/api/v1"
+  end
 
   def search_response
     stop_id = params[:stop_id]

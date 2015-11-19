@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3001/api/v1/routes/0
+    uri: http://localhost:3000/api/v1/routes/0
     body:
       encoding: US-ASCII
       string: ''
@@ -15,964 +15,512 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 200
-      message: 'OK '
+      code: 404
+      message: 'Not Found '
     headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
       Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"87be05df2e0e0050a94e9f90400b3ed4"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      - text/html; charset=utf-8
+      Content-Length:
+      - '39784'
+      X-Web-Console-Session-Id:
+      - 1dc77ae4546b684b2f25701efd458739
       X-Request-Id:
-      - 3f8345ca-988b-43c6-861d-b9df5df34b95
+      - 64748f19-dbf2-478d-a34f-d52d4a3a5694
       X-Runtime:
-      - '2.801267'
+      - '0.274080'
       Server:
       - WEBrick/1.3.1 (Ruby/2.2.1/2015-02-26)
       Date:
-      - Thu, 19 Nov 2015 08:44:55 GMT
-      Content-Length:
-      - '87458'
+      - Thu, 19 Nov 2015 16:46:39 GMT
       Connection:
       - Keep-Alive
     body:
       encoding: UTF-8
-      string: '{"route_id":"0","route_short_name":"0","route_long_name":"South Broadway","route_desc":"This
-        Route Travels Northbound \u0026 Southbound","route_url":"http://www3.rtd-denver.com/","stops":[{"id":26262,"stop_id":26262,"stop_name":"Highlands
-        Ranch Town Center PnR Gate B","stop_desc":"Vehicles Travelling Northwest","stop_lat":"39.547191","stop_lon":"-104.997556","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:18.412Z","updated_at":"2015-11-17T00:08:18.412Z"},{"id":17717,"stop_id":17717,"stop_name":"17th
-        St \u0026 Larimer St","stop_desc":"Vehicles Travelling Southeast","stop_lat":"39.749822","stop_lon":"-104.995961","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:05.986Z","updated_at":"2015-11-17T00:08:05.986Z"},{"id":26175,"stop_id":26175,"stop_name":"Englewood
-        Station Gate C","stop_desc":"Vehicles Travelling North","stop_lat":"39.655756","stop_lon":"-104.999554","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:18.185Z","updated_at":"2015-11-17T00:08:18.185Z"},{"id":34323,"stop_id":34323,"stop_name":"Union
-        Station Gate B4","stop_desc":"Vehicles Travelling Northwest","stop_lat":"39.753904","stop_lon":"-105.001241","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:21.257Z","updated_at":"2015-11-17T00:08:21.257Z"},{"id":34317,"stop_id":34317,"stop_name":"Union
-        Station Gate B20","stop_desc":"Vehicles Travelling Southeast","stop_lat":"39.753869","stop_lon":"-105.00085","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:21.246Z","updated_at":"2015-11-17T00:08:21.246Z"},{"id":26280,"stop_id":26280,"stop_name":"I-25
-        \u0026 Broadway Station Gate C1","stop_desc":"Vehicles Travelling West","stop_lat":"39.701951","stop_lon":"-104.989791","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:18.440Z","updated_at":"2015-11-17T00:08:18.440Z"},{"id":12516,"stop_id":12516,"stop_name":"S
-        Broadway \u0026 Evans Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.678824","stop_lon":"-104.987407","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.595Z","updated_at":"2015-11-17T00:07:56.595Z"},{"id":12552,"stop_id":12552,"stop_name":"S
-        Broadway \u0026 Littleton Blvd","stop_desc":"Vehicles Travelling North","stop_lat":"39.613585","stop_lon":"-104.987897","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.694Z","updated_at":"2015-11-17T00:07:56.694Z"},{"id":20102,"stop_id":20102,"stop_name":"17th
-        St \u0026 Market St","stop_desc":"Vehicles Travelling Southeast","stop_lat":"39.751187","stop_lon":"-104.997671","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:08.970Z","updated_at":"2015-11-17T00:08:08.970Z"},{"id":17715,"stop_id":17715,"stop_name":"17th
-        St \u0026 Curtis St [ Z Stop ]","stop_desc":"Vehicles Travelling East","stop_lat":"39.747891","stop_lon":"-104.99344","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:05.980Z","updated_at":"2015-11-17T00:08:05.980Z"},{"id":20171,"stop_id":20171,"stop_name":"S
-        Elati St \u0026 Englewood Pkwy","stop_desc":"Vehicles Travelling South","stop_lat":"39.65571","stop_lon":"-104.993607","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:09.007Z","updated_at":"2015-11-17T00:08:09.007Z"},{"id":25602,"stop_id":25602,"stop_name":"Ridgeline
-        Blvd \u0026 Highlands Ranch Pkwy","stop_desc":"Vehicles Travelling North","stop_lat":"39.549632","stop_lon":"-104.996192","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:17.101Z","updated_at":"2015-11-17T00:08:17.101Z"},{"id":14989,"stop_id":14989,"stop_name":"Walsh
-        Pl \u0026 S Lincoln St","stop_desc":"Vehicles Travelling Northeast","stop_lat":"39.702401","stop_lon":"-104.986473","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:01.127Z","updated_at":"2015-11-17T00:08:01.127Z"},{"id":12540,"stop_id":12540,"stop_name":"S
-        Broadway \u0026 Jewell Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.682406","stop_lon":"-104.987461","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.662Z","updated_at":"2015-11-17T00:07:56.662Z"},{"id":12444,"stop_id":12444,"stop_name":"S
-        Broadway \u0026 Powers Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.617275","stop_lon":"-104.987901","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.428Z","updated_at":"2015-11-17T00:07:56.428Z"},{"id":26250,"stop_id":26250,"stop_name":"8900
-        Block Ridgeline Blvd","stop_desc":"Vehicles Travelling North","stop_lat":"39.553734","stop_lon":"-104.996451","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:18.394Z","updated_at":"2015-11-17T00:08:18.394Z"},{"id":17712,"stop_id":17712,"stop_name":"17th
-        St \u0026 California St [ Z Stop ]","stop_desc":"Vehicles Travelling East","stop_lat":"39.745801","stop_lon":"-104.990744","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:05.971Z","updated_at":"2015-11-17T00:08:05.971Z"},{"id":20094,"stop_id":20094,"stop_name":"Englewood
-        Pkwy \u0026 S Acoma St","stop_desc":"Vehicles Travelling East","stop_lat":"39.654834","stop_lon":"-104.9891","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:08.961Z","updated_at":"2015-11-17T00:08:08.961Z"},{"id":14986,"stop_id":14986,"stop_name":"S
-        Lincoln St \u0026 Exposition Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.704085","stop_lon":"-104.986211","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:01.121Z","updated_at":"2015-11-17T00:08:01.121Z"},{"id":12500,"stop_id":12500,"stop_name":"S
-        Broadway \u0026 Colorado Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.684251","stop_lon":"-104.987441","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.554Z","updated_at":"2015-11-17T00:07:56.554Z"},{"id":26200,"stop_id":26200,"stop_name":"S
-        Broadway \u0026 W Rafferty Gardens Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.618071","stop_lon":"-104.987858","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:18.252Z","updated_at":"2015-11-17T00:08:18.252Z"},{"id":26244,"stop_id":26244,"stop_name":"8700
-        Block Ridgeline Blvd","stop_desc":"Vehicles Travelling Northwest","stop_lat":"39.55626","stop_lon":"-104.99634","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:18.376Z","updated_at":"2015-11-17T00:08:18.376Z"},{"id":17709,"stop_id":17709,"stop_name":"17th
-        St \u0026 Tremont Pl [ Z Stop ]","stop_desc":"Vehicles Travelling Southeast","stop_lat":"39.743513","stop_lon":"-104.987738","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:05.961Z","updated_at":"2015-11-17T00:08:05.961Z"},{"id":33371,"stop_id":33371,"stop_name":"S
-        Broadway \u0026 Floyd Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.656238","stop_lon":"-104.987535","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:19.850Z","updated_at":"2015-11-17T00:08:19.850Z"},{"id":14984,"stop_id":14984,"stop_name":"S
-        Lincoln St \u0026 Center Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.705974","stop_lon":"-104.98623","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:01.118Z","updated_at":"2015-11-17T00:08:01.118Z"},{"id":12537,"stop_id":12537,"stop_name":"S
-        Broadway \u0026 Iowa Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.687251","stop_lon":"-104.987406","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.652Z","updated_at":"2015-11-17T00:07:56.652Z"},{"id":12495,"stop_id":12495,"stop_name":"S
-        Broadway \u0026 Centennial Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.621713","stop_lon":"-104.98784","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.543Z","updated_at":"2015-11-17T00:07:56.543Z"},{"id":26247,"stop_id":26247,"stop_name":"Ridgeline
-        Blvd \u0026 Bluepoint Rd","stop_desc":"Vehicles Travelling North","stop_lat":"39.556684","stop_lon":"-104.99819","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:18.385Z","updated_at":"2015-11-17T00:08:18.385Z"},{"id":17730,"stop_id":17730,"stop_name":"Broadway
-        \u0026 Cleveland Pl","stop_desc":"Vehicles Travelling South","stop_lat":"39.74246","stop_lon":"-104.987551","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.001Z","updated_at":"2015-11-17T00:08:06.001Z"},{"id":12522,"stop_id":12522,"stop_name":"S
-        Broadway \u0026 Eastman Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.657858","stop_lon":"-104.98749","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.610Z","updated_at":"2015-11-17T00:07:56.610Z"},{"id":14988,"stop_id":14988,"stop_name":"S
-        Lincoln St \u0026 Virginia Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.707768","stop_lon":"-104.986327","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:01.124Z","updated_at":"2015-11-17T00:08:01.124Z"},{"id":12520,"stop_id":12520,"stop_name":"S
-        Broadway \u0026 Florida Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.689655","stop_lon":"-104.987395","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.604Z","updated_at":"2015-11-17T00:07:56.604Z"},{"id":12482,"stop_id":12482,"stop_name":"S
-        Broadway \u0026 Belleview Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.624601","stop_lon":"-104.987788","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.504Z","updated_at":"2015-11-17T00:07:56.504Z"},{"id":25676,"stop_id":25676,"stop_name":"Centennial
-        Blvd \u0026 Plaza Dr","stop_desc":"Vehicles Travelling Northwest","stop_lat":"39.559222","stop_lon":"-104.990265","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:17.263Z","updated_at":"2015-11-17T00:08:17.263Z"},{"id":12510,"stop_id":12510,"stop_name":"S
-        Broadway \u0026 Dartmouth Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.660901","stop_lon":"-104.987463","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.579Z","updated_at":"2015-11-17T00:07:56.579Z"},{"id":17731,"stop_id":17731,"stop_name":"Broadway
-        \u0026 W Colfax Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.740318","stop_lon":"-104.987529","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.004Z","updated_at":"2015-11-17T00:08:06.004Z"},{"id":14982,"stop_id":14982,"stop_name":"S
-        Lincoln St \u0026 Alameda Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.711333","stop_lon":"-104.986249","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:01.115Z","updated_at":"2015-11-17T00:08:01.115Z"},{"id":12555,"stop_id":12555,"stop_name":"S
-        Broadway \u0026 Louisiana Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.693308","stop_lon":"-104.987358","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.704Z","updated_at":"2015-11-17T00:07:56.704Z"},{"id":12498,"stop_id":12498,"stop_name":"S
-        Broadway \u0026 Chenango Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.627898","stop_lon":"-104.9878","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.550Z","updated_at":"2015-11-17T00:07:56.550Z"},{"id":22454,"stop_id":22454,"stop_name":"Centennial
-        Blvd \u0026 S Broadway","stop_desc":"Vehicles Travelling Northeast","stop_lat":"39.561986","stop_lon":"-104.98849","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:12.024Z","updated_at":"2015-11-17T00:08:12.024Z"},{"id":12480,"stop_id":12480,"stop_name":"S
-        Broadway \u0026 Bates Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.664635","stop_lon":"-104.987466","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.497Z","updated_at":"2015-11-17T00:07:56.497Z"},{"id":17778,"stop_id":17778,"stop_name":"S
-        Lincoln St \u0026 Cedar Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.713283","stop_lon":"-104.986219","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.091Z","updated_at":"2015-11-17T00:08:06.091Z"},{"id":12430,"stop_id":12430,"stop_name":"Broadway
-        \u0026 W 14th Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.738605","stop_lon":"-104.987527","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.397Z","updated_at":"2015-11-17T00:07:56.397Z"},{"id":12563,"stop_id":12563,"stop_name":"S
-        Broadway \u0026 Mississippi Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.696946","stop_lon":"-104.987333","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.727Z","updated_at":"2015-11-17T00:07:56.727Z"},{"id":12606,"stop_id":12606,"stop_name":"S
-        Broadway \u0026 Union Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.631784","stop_lon":"-104.987756","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.823Z","updated_at":"2015-11-17T00:07:56.823Z"},{"id":20378,"stop_id":20378,"stop_name":"S
-        Broadway \u0026 County Line Rd","stop_desc":"Vehicles Travelling North","stop_lat":"39.565628","stop_lon":"-104.988345","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:09.231Z","updated_at":"2015-11-17T00:08:09.231Z"},{"id":12616,"stop_id":12616,"stop_name":"S
-        Broadway \u0026 Yale Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.667997","stop_lon":"-104.987477","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.845Z","updated_at":"2015-11-17T00:07:56.845Z"},{"id":17779,"stop_id":17779,"stop_name":"S
-        Lincoln St \u0026 Bayaud Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.715045","stop_lon":"-104.986201","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.095Z","updated_at":"2015-11-17T00:08:06.095Z"},{"id":12427,"stop_id":12427,"stop_name":"Broadway
-        \u0026 W 13th Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.736373","stop_lon":"-104.987538","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.395Z","updated_at":"2015-11-17T00:07:56.395Z"},{"id":12594,"stop_id":12594,"stop_name":"S
-        Broadway \u0026 Stanford Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.63519","stop_lon":"-104.987717","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.798Z","updated_at":"2015-11-17T00:07:56.798Z"},{"id":24461,"stop_id":24461,"stop_name":"S
-        Broadway \u0026 Southpark Dr","stop_desc":"Vehicles Travelling North","stop_lat":"39.568642","stop_lon":"-104.988392","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:15.094Z","updated_at":"2015-11-17T00:08:15.094Z"},{"id":12532,"stop_id":12532,"stop_name":"S
-        Broadway \u0026 Harvard Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.67153","stop_lon":"-104.987481","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.636Z","updated_at":"2015-11-17T00:07:56.636Z"},{"id":17780,"stop_id":17780,"stop_name":"Lincoln
-        St \u0026 Ellsworth Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.716791","stop_lon":"-104.986162","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.098Z","updated_at":"2015-11-17T00:08:06.098Z"},{"id":17770,"stop_id":17770,"stop_name":"Broadway
-        \u0026 W 11th Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.733487","stop_lon":"-104.987534","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.068Z","updated_at":"2015-11-17T00:08:06.068Z"},{"id":12583,"stop_id":12583,"stop_name":"S
-        Broadway \u0026 Quincy Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.639117","stop_lon":"-104.987673","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.778Z","updated_at":"2015-11-17T00:07:56.778Z"},{"id":22455,"stop_id":22455,"stop_name":"S
-        Broadway \u0026 S Grant Way","stop_desc":"Vehicles Travelling North","stop_lat":"39.571138","stop_lon":"-104.988347","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:12.027Z","updated_at":"2015-11-17T00:08:12.027Z"},{"id":12535,"stop_id":12535,"stop_name":"S
-        Broadway \u0026 Iliff Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.675189","stop_lon":"-104.987477","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.646Z","updated_at":"2015-11-17T00:07:56.646Z"},{"id":14967,"stop_id":14967,"stop_name":"Lincoln
-        St \u0026 1st Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.718831","stop_lon":"-104.986151","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:01.082Z","updated_at":"2015-11-17T00:08:01.082Z"},{"id":12463,"stop_id":12463,"stop_name":"Broadway
-        \u0026 W 9th Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.729709","stop_lon":"-104.987544","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.458Z","updated_at":"2015-11-17T00:07:56.458Z"},{"id":12572,"stop_id":12572,"stop_name":"S
-        Broadway \u0026 Oxford Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.642671","stop_lon":"-104.987625","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.746Z","updated_at":"2015-11-17T00:07:56.746Z"},{"id":17611,"stop_id":17611,"stop_name":"S
-        Broadway \u0026 Mineral Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.573835","stop_lon":"-104.98833","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:05.815Z","updated_at":"2015-11-17T00:08:05.815Z"},{"id":24434,"stop_id":24434,"stop_name":"Lincoln
-        St \u0026 4th Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.722303","stop_lon":"-104.986155","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:15.058Z","updated_at":"2015-11-17T00:08:15.058Z"},{"id":18826,"stop_id":18826,"stop_name":"Broadway
-        \u0026 7th Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.728007","stop_lon":"-104.987556","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:07.232Z","updated_at":"2015-11-17T00:08:07.232Z"},{"id":12557,"stop_id":12557,"stop_name":"S
-        Broadway \u0026 Mansfield Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.646166","stop_lon":"-104.987581","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.709Z","updated_at":"2015-11-17T00:07:56.709Z"},{"id":22218,"stop_id":22218,"stop_name":"S
-        Broadway \u0026 Jamison Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.575734","stop_lon":"-104.988338","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:11.681Z","updated_at":"2015-11-17T00:08:11.681Z"},{"id":17782,"stop_id":17782,"stop_name":"Lincoln
-        St \u0026 5th Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.723862","stop_lon":"-104.986181","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.101Z","updated_at":"2015-11-17T00:08:06.101Z"},{"id":17771,"stop_id":17771,"stop_name":"Broadway
-        \u0026 Speer Blvd","stop_desc":"Vehicles Travelling South","stop_lat":"39.72632","stop_lon":"-104.987563","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.071Z","updated_at":"2015-11-17T00:08:06.071Z"},{"id":12546,"stop_id":12546,"stop_name":"S
-        Broadway \u0026 Kenyon Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.650045","stop_lon":"-104.987534","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.675Z","updated_at":"2015-11-17T00:07:56.675Z"},{"id":19143,"stop_id":19143,"stop_name":"S
-        Broadway \u0026 Dry Creek Rd","stop_desc":"Vehicles Travelling North","stop_lat":"39.580306","stop_lon":"-104.988222","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:07.724Z","updated_at":"2015-11-17T00:08:07.724Z"},{"id":14978,"stop_id":14978,"stop_name":"Lincoln
-        St \u0026 7th Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.727596","stop_lon":"-104.986043","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:01.113Z","updated_at":"2015-11-17T00:08:01.113Z"},{"id":17772,"stop_id":17772,"stop_name":"Broadway
-        \u0026 W 5th Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.724291","stop_lon":"-104.987625","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.075Z","updated_at":"2015-11-17T00:08:06.075Z"},{"id":12529,"stop_id":12529,"stop_name":"S
-        Broadway \u0026 Hampden Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.653404","stop_lon":"-104.987512","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.625Z","updated_at":"2015-11-17T00:07:56.625Z"},{"id":17610,"stop_id":17610,"stop_name":"S
-        Broadway  \u0026 Geddes Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.584285","stop_lon":"-104.988231","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:05.811Z","updated_at":"2015-11-17T00:08:05.811Z"},{"id":17783,"stop_id":17783,"stop_name":"Lincoln
-        St \u0026 9th Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.730712","stop_lon":"-104.986039","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.105Z","updated_at":"2015-11-17T00:08:06.105Z"},{"id":17773,"stop_id":17773,"stop_name":"Broadway
-        \u0026 4th Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.722192","stop_lon":"-104.987628","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.079Z","updated_at":"2015-11-17T00:08:06.079Z"},{"id":20093,"stop_id":20093,"stop_name":"Englewood
-        Pkwy \u0026 S Acoma St","stop_desc":"Vehicles Travelling West","stop_lat":"39.655026","stop_lon":"-104.989193","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:08.958Z","updated_at":"2015-11-17T00:08:08.958Z"},{"id":24177,"stop_id":24177,"stop_name":"S
-        Broadway \u0026 W Fremont Pl","stop_desc":"Vehicles Travelling North","stop_lat":"39.585864","stop_lon":"-104.988236","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:14.767Z","updated_at":"2015-11-17T00:08:14.767Z"},{"id":17784,"stop_id":17784,"stop_name":"Lincoln
-        St \u0026 11th Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.733401","stop_lon":"-104.986033","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.108Z","updated_at":"2015-11-17T00:08:06.108Z"},{"id":17774,"stop_id":17774,"stop_name":"Broadway
-        \u0026 W 1st Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.718153","stop_lon":"-104.98762","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.082Z","updated_at":"2015-11-17T00:08:06.082Z"},{"id":13514,"stop_id":13514,"stop_name":"S
-        Elati St \u0026 Englewood Pkwy","stop_desc":"Vehicles Travelling North","stop_lat":"39.655719","stop_lon":"-104.993439","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:58.514Z","updated_at":"2015-11-17T00:07:58.514Z"},{"id":18856,"stop_id":18856,"stop_name":"S
-        Broadway \u0026 S Lincoln Way","stop_desc":"Vehicles Travelling North","stop_lat":"39.588159","stop_lon":"-104.988206","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:07.321Z","updated_at":"2015-11-17T00:08:07.321Z"},{"id":14965,"stop_id":14965,"stop_name":"Lincoln
-        St \u0026 13th Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.736705","stop_lon":"-104.986027","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:01.076Z","updated_at":"2015-11-17T00:08:01.076Z"},{"id":17775,"stop_id":17775,"stop_name":"S
-        Broadway \u0026 W Ellsworth Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.71636","stop_lon":"-104.987631","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.085Z","updated_at":"2015-11-17T00:08:06.085Z"},{"id":12586,"stop_id":12586,"stop_name":"S
-        Broadway \u0026 W Ridge Rd","stop_desc":"Vehicles Travelling North","stop_lat":"39.590965","stop_lon":"-104.988175","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.786Z","updated_at":"2015-11-17T00:07:56.786Z"},{"id":12850,"stop_id":12850,"stop_name":"Colfax
-        Ave \u0026 Broadway","stop_desc":"Vehicles Travelling West","stop_lat":"39.74018","stop_lon":"-104.987141","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:57.156Z","updated_at":"2015-11-17T00:07:57.156Z"},{"id":17776,"stop_id":17776,"stop_name":"S
-        Broadway \u0026 W Bayaud Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.714549","stop_lon":"-104.987633","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.088Z","updated_at":"2015-11-17T00:08:06.088Z"},{"id":12597,"stop_id":12597,"stop_name":"S
-        Broadway \u0026 W Sterne Pkwy","stop_desc":"Vehicles Travelling North","stop_lat":"39.59322","stop_lon":"-104.98815","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.808Z","updated_at":"2015-11-17T00:07:56.808Z"},{"id":17698,"stop_id":17698,"stop_name":"15th
-        St \u0026 Cleveland Pl","stop_desc":"Vehicles Travelling Northwest","stop_lat":"39.741184","stop_lon":"-104.989239","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:05.923Z","updated_at":"2015-11-17T00:08:05.923Z"},{"id":18461,"stop_id":18461,"stop_name":"S
-        Broadway \u0026 W Cedar Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.712705","stop_lon":"-104.987662","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.796Z","updated_at":"2015-11-17T00:08:06.796Z"},{"id":12469,"stop_id":12469,"stop_name":"S
-        Broadway \u0026 Arapahoe Rd","stop_desc":"Vehicles Travelling North","stop_lat":"39.595771","stop_lon":"-104.988121","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.469Z","updated_at":"2015-11-17T00:07:56.469Z"},{"id":21514,"stop_id":21514,"stop_name":"Welton
-        St \u0026 16th Street Mall","stop_desc":"Vehicles Travelling Northeast","stop_lat":"39.744333","stop_lon":"-104.991429","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:10.906Z","updated_at":"2015-11-17T00:08:10.906Z"},{"id":12464,"stop_id":12464,"stop_name":"S
-        Broadway \u0026 W Alameda Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.710672","stop_lon":"-104.987721","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.460Z","updated_at":"2015-11-17T00:07:56.460Z"},{"id":21017,"stop_id":21017,"stop_name":"S
-        Broadway \u0026 Euclid Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.598308","stop_lon":"-104.988066","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:10.167Z","updated_at":"2015-11-17T00:08:10.167Z"},{"id":18825,"stop_id":18825,"stop_name":"18th
-        St \u0026 California St","stop_desc":"Vehicles Travelling Northwest","stop_lat":"39.747556","stop_lon":"-104.990256","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:07.229Z","updated_at":"2015-11-17T00:08:07.229Z"},{"id":21472,"stop_id":21472,"stop_name":"Broadway
-        \u0026 W Center Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.706448","stop_lon":"-104.98771","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:10.846Z","updated_at":"2015-11-17T00:08:10.846Z"},{"id":12587,"stop_id":12587,"stop_name":"S
-        Broadway \u0026 Panama Dr","stop_desc":"Vehicles Travelling North","stop_lat":"39.600135","stop_lon":"-104.98806","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.790Z","updated_at":"2015-11-17T00:07:56.790Z"},{"id":17722,"stop_id":17722,"stop_name":"18th
-        St \u0026 Stout St","stop_desc":"Vehicles Travelling Northwest","stop_lat":"39.74801","stop_lon":"-104.990867","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:05.990Z","updated_at":"2015-11-17T00:08:05.990Z"},{"id":12519,"stop_id":12519,"stop_name":"S
-        Broadway \u0026 W Exposition Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.704141","stop_lon":"-104.987679","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.600Z","updated_at":"2015-11-17T00:07:56.600Z"},{"id":34429,"stop_id":34429,"stop_name":"Broadway
-        \u0026 Ohio Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.702818","stop_lon":"-104.987632","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:21.598Z","updated_at":"2015-11-17T00:08:21.598Z"},{"id":12489,"stop_id":12489,"stop_name":"S
-        Broadway \u0026 Caley Ave","stop_desc":"Vehicles Travelling North","stop_lat":"39.603369","stop_lon":"-104.988004","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.527Z","updated_at":"2015-11-17T00:07:56.527Z"},{"id":17723,"stop_id":17723,"stop_name":"18th
-        St \u0026 Arapahoe St","stop_desc":"Vehicles Travelling Northwest","stop_lat":"39.750075","stop_lon":"-104.993585","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:05.993Z","updated_at":"2015-11-17T00:08:05.993Z"},{"id":12477,"stop_id":12477,"stop_name":"S
-        Broadway \u0026 S Bannock St","stop_desc":"Vehicles Travelling North","stop_lat":"39.606256","stop_lon":"-104.987978","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.489Z","updated_at":"2015-11-17T00:07:56.489Z"},{"id":17833,"stop_id":17833,"stop_name":"18th
-        St \u0026 Larimer St","stop_desc":"Vehicles Travelling Northwest","stop_lat":"39.751307","stop_lon":"-104.995178","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.153Z","updated_at":"2015-11-17T00:08:06.153Z"},{"id":26278,"stop_id":26278,"stop_name":"I-25
-        \u0026 Broadway Station Gate B1","stop_desc":"Vehicles Travelling West","stop_lat":"39.70214","stop_lon":"-104.989809","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:18.437Z","updated_at":"2015-11-17T00:08:18.437Z"},{"id":12571,"stop_id":12571,"stop_name":"S
-        Broadway \u0026 Orchard Rd","stop_desc":"Vehicles Travelling North","stop_lat":"39.61016","stop_lon":"-104.987918","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.744Z","updated_at":"2015-11-17T00:07:56.744Z"},{"id":12526,"stop_id":12526,"stop_name":"S
-        Broadway \u0026 W Tennessee Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.698129","stop_lon":"-104.987552","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.619Z","updated_at":"2015-11-17T00:07:56.619Z"},{"id":17834,"stop_id":17834,"stop_name":"18th
-        St \u0026 Blake St","stop_desc":"Vehicles Travelling Northwest","stop_lat":"39.752629","stop_lon":"-104.996932","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:06.156Z","updated_at":"2015-11-17T00:08:06.156Z"},{"id":34343,"stop_id":34343,"stop_name":"Union
-        Station","stop_desc":"Vehicles Travelling North","stop_lat":"39.753394","stop_lon":"-105.000558","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:21.315Z","updated_at":"2015-11-17T00:08:21.315Z"},{"id":12564,"stop_id":12564,"stop_name":"S
-        Broadway \u0026 W Mississippi Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.69616","stop_lon":"-104.987539","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.730Z","updated_at":"2015-11-17T00:07:56.730Z"},{"id":12556,"stop_id":12556,"stop_name":"S
-        Broadway \u0026 W Louisiana Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.692677","stop_lon":"-104.987574","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.707Z","updated_at":"2015-11-17T00:07:56.707Z"},{"id":12521,"stop_id":12521,"stop_name":"S
-        Broadway \u0026 W Florida Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.689131","stop_lon":"-104.987608","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.607Z","updated_at":"2015-11-17T00:07:56.607Z"},{"id":12538,"stop_id":12538,"stop_name":"S
-        Broadway \u0026 W Mexico Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.686382","stop_lon":"-104.98763","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.657Z","updated_at":"2015-11-17T00:07:56.657Z"},{"id":12501,"stop_id":12501,"stop_name":"S
-        Broadway \u0026 W Colorado Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.683663","stop_lon":"-104.987657","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.557Z","updated_at":"2015-11-17T00:07:56.557Z"},{"id":12541,"stop_id":12541,"stop_name":"S
-        Broadway \u0026 W Jewell Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.681928","stop_lon":"-104.987671","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.665Z","updated_at":"2015-11-17T00:07:56.665Z"},{"id":12517,"stop_id":12517,"stop_name":"S
-        Broadway \u0026 W Evans Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.678136","stop_lon":"-104.987684","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.597Z","updated_at":"2015-11-17T00:07:56.597Z"},{"id":12536,"stop_id":12536,"stop_name":"S
-        Broadway \u0026 W Iliff Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.674424","stop_lon":"-104.987683","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.649Z","updated_at":"2015-11-17T00:07:56.649Z"},{"id":12533,"stop_id":12533,"stop_name":"S
-        Broadway \u0026 W Harvard Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.671031","stop_lon":"-104.987687","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.639Z","updated_at":"2015-11-17T00:07:56.639Z"},{"id":12617,"stop_id":12617,"stop_name":"S
-        Broadway \u0026 W Yale Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.667236","stop_lon":"-104.98773","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.847Z","updated_at":"2015-11-17T00:07:56.847Z"},{"id":12481,"stop_id":12481,"stop_name":"S
-        Broadway \u0026 W Bates Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.663795","stop_lon":"-104.987727","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.501Z","updated_at":"2015-11-17T00:07:56.501Z"},{"id":12511,"stop_id":12511,"stop_name":"S
-        Broadway \u0026 W Dartmouth Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.660055","stop_lon":"-104.987753","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.582Z","updated_at":"2015-11-17T00:07:56.582Z"},{"id":22268,"stop_id":22268,"stop_name":"S
-        Broadway \u0026 W Floyd Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.656016","stop_lon":"-104.98775","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:11.747Z","updated_at":"2015-11-17T00:08:11.747Z"},{"id":26179,"stop_id":26179,"stop_name":"Englewood
-        Station Gate G","stop_desc":"Vehicles Travelling South","stop_lat":"39.656238","stop_lon":"-104.999351","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:18.197Z","updated_at":"2015-11-17T00:08:18.197Z"},{"id":34324,"stop_id":34324,"stop_name":"Union
-        Station Gate B5","stop_desc":"Vehicles Travelling Northwest","stop_lat":"39.754028","stop_lon":"-105.001423","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:21.260Z","updated_at":"2015-11-17T00:08:21.260Z"},{"id":12530,"stop_id":12530,"stop_name":"S
-        Broadway \u0026 W Hampden Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.652807","stop_lon":"-104.987763","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.628Z","updated_at":"2015-11-17T00:07:56.628Z"},{"id":12547,"stop_id":12547,"stop_name":"S
-        Broadway \u0026 W Kenyon Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.64912","stop_lon":"-104.987827","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.678Z","updated_at":"2015-11-17T00:07:56.678Z"},{"id":12558,"stop_id":12558,"stop_name":"S
-        Broadway \u0026 W Mansfield Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.645532","stop_lon":"-104.987874","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.713Z","updated_at":"2015-11-17T00:07:56.713Z"},{"id":12573,"stop_id":12573,"stop_name":"S
-        Broadway \u0026 W Oxford Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.641971","stop_lon":"-104.987915","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.750Z","updated_at":"2015-11-17T00:07:56.750Z"},{"id":12584,"stop_id":12584,"stop_name":"S
-        Broadway \u0026 W Quincy Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.638284","stop_lon":"-104.987961","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.781Z","updated_at":"2015-11-17T00:07:56.781Z"},{"id":12595,"stop_id":12595,"stop_name":"S
-        Broadway \u0026 W Stanford Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.634685","stop_lon":"-104.988006","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.801Z","updated_at":"2015-11-17T00:07:56.801Z"},{"id":12607,"stop_id":12607,"stop_name":"S
-        Broadway \u0026 W Union Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.631019","stop_lon":"-104.988042","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.827Z","updated_at":"2015-11-17T00:07:56.827Z"},{"id":12497,"stop_id":12497,"stop_name":"S
-        Broadway \u0026 W Chenango Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.627396","stop_lon":"-104.988081","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.546Z","updated_at":"2015-11-17T00:07:56.546Z"},{"id":12483,"stop_id":12483,"stop_name":"S
-        Broadway \u0026 W Belleview Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.623201","stop_lon":"-104.988139","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.507Z","updated_at":"2015-11-17T00:07:56.507Z"},{"id":12494,"stop_id":12494,"stop_name":"S
-        Broadway \u0026 W Centennial Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.621475","stop_lon":"-104.988148","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.540Z","updated_at":"2015-11-17T00:07:56.540Z"},{"id":22056,"stop_id":22056,"stop_name":"S
-        Broadway \u0026 W Rafferty Gardens Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.618593","stop_lon":"-104.988174","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:11.534Z","updated_at":"2015-11-17T00:08:11.534Z"},{"id":12443,"stop_id":12443,"stop_name":"S
-        Broadway \u0026 W Powers Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.616343","stop_lon":"-104.98819","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.425Z","updated_at":"2015-11-17T00:07:56.425Z"},{"id":12553,"stop_id":12553,"stop_name":"S
-        Broadway \u0026 W Littleton Blvd","stop_desc":"Vehicles Travelling South","stop_lat":"39.612492","stop_lon":"-104.988213","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.697Z","updated_at":"2015-11-17T00:07:56.697Z"},{"id":12486,"stop_id":12486,"stop_name":"S
-        Broadway \u0026 W Broadmoor Dr","stop_desc":"Vehicles Travelling South","stop_lat":"39.608539","stop_lon":"-104.98823","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.517Z","updated_at":"2015-11-17T00:07:56.517Z"},{"id":12476,"stop_id":12476,"stop_name":"S
-        Broadway \u0026 S Bannock St","stop_desc":"Vehicles Travelling South","stop_lat":"39.605482","stop_lon":"-104.988271","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.486Z","updated_at":"2015-11-17T00:07:56.486Z"},{"id":20637,"stop_id":20637,"stop_name":"S
-        Broadway \u0026 W Fair Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.603255","stop_lon":"-104.988294","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:09.515Z","updated_at":"2015-11-17T00:08:09.515Z"},{"id":12488,"stop_id":12488,"stop_name":"S
-        Broadway \u0026 Panama Dr","stop_desc":"Vehicles Travelling South","stop_lat":"39.601355","stop_lon":"-104.988292","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.524Z","updated_at":"2015-11-17T00:07:56.524Z"},{"id":12615,"stop_id":12615,"stop_name":"S
-        Broadway \u0026 Weaver Pl","stop_desc":"Vehicles Travelling South","stop_lat":"39.598094","stop_lon":"-104.988372","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.842Z","updated_at":"2015-11-17T00:07:56.842Z"},{"id":12468,"stop_id":12468,"stop_name":"S
-        Broadway \u0026 Arapahoe Rd","stop_desc":"Vehicles Travelling South","stop_lat":"39.595007","stop_lon":"-104.988462","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.466Z","updated_at":"2015-11-17T00:07:56.466Z"},{"id":12596,"stop_id":12596,"stop_name":"S
-        Broadway \u0026 W Sterne Pkwy","stop_desc":"Vehicles Travelling South","stop_lat":"39.592567","stop_lon":"-104.988443","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:07:56.805Z","updated_at":"2015-11-17T00:07:56.805Z"},{"id":18836,"stop_id":18836,"stop_name":"S
-        Broadway \u0026 W Ridge Rd","stop_desc":"Vehicles Travelling South","stop_lat":"39.590388","stop_lon":"-104.988468","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:07.261Z","updated_at":"2015-11-17T00:08:07.261Z"},{"id":18837,"stop_id":18837,"stop_name":"S
-        Broadway \u0026 W Davies Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.588663","stop_lon":"-104.988459","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:07.263Z","updated_at":"2015-11-17T00:08:07.263Z"},{"id":24176,"stop_id":24176,"stop_name":"S
-        Broadway \u0026 W Fremont Pl","stop_desc":"Vehicles Travelling South","stop_lat":"39.586565","stop_lon":"-104.9885","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:14.764Z","updated_at":"2015-11-17T00:08:14.764Z"},{"id":17609,"stop_id":17609,"stop_name":"S
-        Broadway \u0026 W Fremont Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.583205","stop_lon":"-104.988538","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:05.808Z","updated_at":"2015-11-17T00:08:05.808Z"},{"id":19144,"stop_id":19144,"stop_name":"S
-        Broadway \u0026 W Dry Creek Rd","stop_desc":"Vehicles Travelling South","stop_lat":"39.580219","stop_lon":"-104.988574","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:07.727Z","updated_at":"2015-11-17T00:08:07.727Z"},{"id":22217,"stop_id":22217,"stop_name":"S
-        Broadway \u0026 W Jamison Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.575836","stop_lon":"-104.988605","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:11.678Z","updated_at":"2015-11-17T00:08:11.678Z"},{"id":20446,"stop_id":20446,"stop_name":"S
-        Broadway \u0026 W Mineral Ave","stop_desc":"Vehicles Travelling South","stop_lat":"39.572906","stop_lon":"-104.988629","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:09.291Z","updated_at":"2015-11-17T00:08:09.291Z"},{"id":22453,"stop_id":22453,"stop_name":"S
-        Broadway \u0026 S Grant Way","stop_desc":"Vehicles Travelling South","stop_lat":"39.570567","stop_lon":"-104.988648","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:12.021Z","updated_at":"2015-11-17T00:08:12.021Z"},{"id":24460,"stop_id":24460,"stop_name":"S
-        Broadway \u0026 Southpark Dr","stop_desc":"Vehicles Travelling South","stop_lat":"39.568564","stop_lon":"-104.988706","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:15.091Z","updated_at":"2015-11-17T00:08:15.091Z"},{"id":20079,"stop_id":20079,"stop_name":"S
-        Broadway \u0026 W County Line Rd","stop_desc":"Vehicles Travelling South","stop_lat":"39.566815","stop_lon":"-104.98872","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:08.943Z","updated_at":"2015-11-17T00:08:08.943Z"},{"id":25185,"stop_id":25185,"stop_name":"Centennial
-        Blvd \u0026 S Broadway","stop_desc":"Vehicles Travelling West","stop_lat":"39.562585","stop_lon":"-104.987279","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:16.247Z","updated_at":"2015-11-17T00:08:16.247Z"},{"id":26613,"stop_id":26613,"stop_name":"Centennial
-        Blvd \u0026 S Broadway","stop_desc":"Vehicles Travelling Southwest","stop_lat":"39.562058","stop_lon":"-104.98882","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:18.968Z","updated_at":"2015-11-17T00:08:18.968Z"},{"id":25931,"stop_id":25931,"stop_name":"Centennial
-        Blvd \u0026 Plaza Dr","stop_desc":"Vehicles Travelling South","stop_lat":"39.559937","stop_lon":"-104.991041","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:17.728Z","updated_at":"2015-11-17T00:08:17.728Z"},{"id":26614,"stop_id":26614,"stop_name":"Plaza
-        Dr \u0026 Centennial Blvd","stop_desc":"Vehicles Travelling West","stop_lat":"39.559098","stop_lon":"-104.990948","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:18.972Z","updated_at":"2015-11-17T00:08:18.972Z"},{"id":26245,"stop_id":26245,"stop_name":"Ridgeline
-        Blvd \u0026 Bluepoint Rd","stop_desc":"Vehicles Travelling South","stop_lat":"39.55677","stop_lon":"-104.998564","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:18.379Z","updated_at":"2015-11-17T00:08:18.379Z"},{"id":22906,"stop_id":22906,"stop_name":"8700
-        Block Ridgeline Blvd","stop_desc":"Vehicles Travelling Southeast","stop_lat":"39.556166","stop_lon":"-104.99645","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:12.643Z","updated_at":"2015-11-17T00:08:12.643Z"},{"id":22907,"stop_id":22907,"stop_name":"8900
-        Block Ridgeline Blvd","stop_desc":"Vehicles Travelling South","stop_lat":"39.553211","stop_lon":"-104.996647","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:12.646Z","updated_at":"2015-11-17T00:08:12.646Z"},{"id":24947,"stop_id":24947,"stop_name":"Ridgeline
-        Blvd \u0026 Highlands Ranch Pkwy","stop_desc":"Vehicles Travelling South","stop_lat":"39.548417","stop_lon":"-104.996231","zone_id":null,"stop_url":null,"location_type":"0","created_at":"2015-11-17T00:08:15.753Z","updated_at":"2015-11-17T00:08:15.753Z"}],"trips":[{"route_id":"0","service_id":"SA","trip_id":109470772,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470636,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470740,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471126,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470952,"trip_headsign":"Downtown","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471137,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470949,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470738,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471136,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471030,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471121,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471064,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471013,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470934,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470641,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470734,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471117,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470708,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471063,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470979,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471040,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470789,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471072,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470945,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470669,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471120,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471100,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470774,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470978,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471108,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470944,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470668,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471116,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470986,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471094,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470748,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470966,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471069,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470998,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470701,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471115,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471033,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471062,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470709,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470720,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471070,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470977,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470990,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470640,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471097,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470773,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471034,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471154,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470679,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470736,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471051,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470995,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471017,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470933,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470660,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471001,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471127,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470727,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471153,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470684,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470717,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470937,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471073,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470985,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470997,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470713,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471096,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470788,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470942,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471080,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470653,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470766,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471122,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470712,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470931,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471020,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471087,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470787,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470964,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471079,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470678,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470765,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470711,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471053,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470930,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471019,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471102,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470786,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470971,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470677,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471078,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470764,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470714,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471123,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470999,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471018,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471119,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470785,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470970,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470637,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471076,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470743,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470685,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471124,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470988,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471021,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471105,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470784,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470969,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470699,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471075,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470725,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470645,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471141,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471031,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470993,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471118,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470783,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470961,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470652,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471074,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470724,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470644,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471135,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470938,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470992,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471049,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470737,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470984,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471066,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470666,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470723,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470643,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471092,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471038,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470991,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471086,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470741,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470983,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471125,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470656,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470722,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470642,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471077,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470976,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471025,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471085,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470726,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470950,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471145,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470638,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470744,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470672,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471151,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470962,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471023,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471152,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470756,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471029,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471144,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470647,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470747,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470691,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471082,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470974,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470989,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471083,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470779,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470975,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471109,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470675,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470780,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470690,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470973,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471131,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470987,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471045,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470778,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470967,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471146,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470657,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470757,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470670,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470943,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471067,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471035,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471044,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470777,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471024,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471112,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470688,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470730,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470687,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470932,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471129,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470929,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471043,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470767,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471026,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471111,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470655,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470758,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470671,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470954,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471140,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471004,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471113,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470739,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471143,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470941,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470681,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470781,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471088,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470650,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471036,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470972,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471133,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470771,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471134,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470982,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470680,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471090,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470752,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470710,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471028,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470965,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471068,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470770,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471150,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470956,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470673,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471047,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470775,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470651,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471132,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471027,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470948,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471138,"trip_headsign":"Evans","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470728,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471149,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471006,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470694,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471139,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470735,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470697,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471046,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470947,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471009,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470790,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471148,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471016,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470693,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471091,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470762,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470662,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471041,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470963,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471110,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470749,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471147,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471015,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470706,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471084,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470746,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470661,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470940,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471093,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470996,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470721,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471081,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470936,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470646,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471060,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470745,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470695,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470968,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470960,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471142,"trip_headsign":"Evans","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470759,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471003,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470654,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471061,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470750,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470649,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471014,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470782,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471022,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471065,"trip_headsign":"Evans","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471002,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470664,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471059,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470733,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470648,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470742,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470946,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471095,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470665,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470957,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470732,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471058,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470705,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470715,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471000,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471089,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470953,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470731,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471057,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470704,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471107,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470763,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470658,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471039,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470955,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471056,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470760,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470703,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470718,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471098,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470663,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471008,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470769,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471055,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471012,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470702,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471128,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470751,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470686,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470980,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470768,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471114,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470981,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471052,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470729,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470683,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471037,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470716,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471054,"trip_headsign":"Littleton
-        Blvd","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471007,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471048,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470667,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470793,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470674,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470659,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470935,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471050,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470755,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471011,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471130,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470792,"trip_headsign":"Broadway
-        Stn","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470707,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471005,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470754,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471106,"trip_headsign":"Littleton
-        Blvd","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470959,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470791,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471104,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470639,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470689,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470700,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109470958,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471103,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470753,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470951,"trip_headsign":"Downtown","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471010,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470776,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471101,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470682,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470676,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471071,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"SA","trip_id":109470719,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471032,"trip_headsign":"Downtown","direction_id":0},{"route_id":"0","service_id":"WK","trip_id":109471042,"trip_headsign":"Downtown","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470698,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470696,"trip_headsign":"Union
-        Station","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470761,"trip_headsign":"Englewood
-        Station","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109471099,"trip_headsign":"Highlands
-        Ranch","direction_id":1},{"route_id":"0","service_id":"WK","trip_id":109470994,"trip_headsign":"Downtown","direction_id":0},{"route_id":"0","service_id":"SA","trip_id":109470692,"trip_headsign":"Union
-        Station","direction_id":0}]}'
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\"
+        />\n  <title>Action Controller: Exception caught</title>\n  <style>\n    body
+        {\n      background-color: #FAFAFA;\n      color: #333;\n      margin: 0px;\n
+        \   }\n\n    body, p, ol, ul, td {\n      font-family: helvetica, verdana,
+        arial, sans-serif;\n      font-size:   13px;\n      line-height: 18px;\n    }\n\n
+        \   pre {\n      font-size: 11px;\n      white-space: pre-wrap;\n    }\n\n
+        \   pre.box {\n      border: 1px solid #EEE;\n      padding: 10px;\n      margin:
+        0px;\n      width: 958px;\n    }\n\n    header {\n      color: #F0F0F0;\n
+        \     background: #C52F24;\n      padding: 0.5em 1.5em;\n    }\n\n    h1 {\n
+        \     margin: 0.2em 0;\n      line-height: 1.1em;\n      font-size: 2em;\n
+        \   }\n\n    h2 {\n      color: #C52F24;\n      line-height: 25px;\n    }\n\n
+        \   .details {\n      border: 1px solid #D0D0D0;\n      border-radius: 4px;\n
+        \     margin: 1em 0px;\n      display: block;\n      width: 978px;\n    }\n\n
+        \   .summary {\n      padding: 8px 15px;\n      border-bottom: 1px solid #D0D0D0;\n
+        \     display: block;\n    }\n\n    .details pre {\n      margin: 5px;\n      border:
+        none;\n    }\n\n    #container {\n      box-sizing: border-box;\n      width:
+        100%;\n      padding: 0 1.5em;\n    }\n\n    .source * {\n      margin: 0px;\n
+        \     padding: 0px;\n    }\n\n    .source {\n      border: 1px solid #D9D9D9;\n
+        \     background: #ECECEC;\n      width: 978px;\n    }\n\n    .source pre
+        {\n      padding: 10px 0px;\n      border: none;\n    }\n\n    .source .data
+        {\n      font-size: 80%;\n      overflow: auto;\n      background-color: #FFF;\n
+        \   }\n\n    .info {\n      padding: 0.5em;\n    }\n\n    .source .data .line_numbers
+        {\n      background-color: #ECECEC;\n      color: #AAA;\n      padding: 1em
+        .5em;\n      border-right: 1px solid #DDD;\n      text-align: right;\n    }\n\n
+        \   .line {\n      padding-left: 10px;\n    }\n\n    .line:hover {\n      background-color:
+        #F6F6F6;\n    }\n\n    .line.active {\n      background-color: #FFCCCC;\n
+        \   }\n\n    .hidden {\n      display: none;\n    }\n\n    a { color: #980905;
+        }\n    a:visited { color: #666; }\n    a.trace-frames { color: #666; }\n    a:hover
+        { color: #C52F24; }\n    a.trace-frames.selected { color: #C52F24 }\n\n      #route_table
+        {\n    margin: 0;\n    border-collapse: collapse;\n  }\n\n  #route_table thead
+        tr {\n    border-bottom: 2px solid #ddd;\n  }\n\n  #route_table thead tr.bottom
+        {\n    border-bottom: none;\n  }\n\n  #route_table thead tr.bottom th {\n
+        \   padding: 10px 0;\n    line-height: 15px;\n  }\n\n  #route_table tbody
+        tr {\n    border-bottom: 1px solid #ddd;\n  }\n\n  #route_table tbody tr:nth-child(odd)
+        {\n    background: #f2f2f2;\n  }\n\n  #route_table tbody.exact_matches,\n
+        \ #route_table tbody.fuzzy_matches {\n    background-color: LightGoldenRodYellow;\n
+        \   border-bottom: solid 2px SlateGrey;\n  }\n\n  #route_table tbody.exact_matches
+        tr,\n  #route_table tbody.fuzzy_matches tr {\n    background: none;\n    border-bottom:
+        none;\n  }\n\n  #route_table td {\n    padding: 4px 30px;\n  }\n\n  #path_search
+        {\n    width: 80%;\n    font-size: inherit;\n  }\n\n  </style>\n\n  <script>\n
+        \   var toggle = function(id) {\n      var s = document.getElementById(id).style;\n
+        \     s.display = s.display == 'none' ? 'block' : 'none';\n      return false;\n
+        \   }\n    var show = function(id) {\n      document.getElementById(id).style.display
+        = 'block';\n    }\n    var hide = function(id) {\n      document.getElementById(id).style.display
+        = 'none';\n    }\n    var toggleTrace = function() {\n      return toggle('blame_trace');\n
+        \   }\n    var toggleSessionDump = function() {\n      return toggle('session_dump');\n
+        \   }\n    var toggleEnvDump = function() {\n      return toggle('env_dump');\n
+        \   }\n  </script>\n</head>\n<body>\n\n<header>\n  <h1>Routing Error</h1>\n</header>\n<div
+        id=\"container\">\n  <h2>No route matches [GET] &quot;/api/v1/routes/0&quot;</h2>\n\n
+        \ \n<p><code>Rails.root: /Users/michael_wong/Turing/Module3/Projects/next_stop</code></p>\n\n<div
+        id=\"traces\">\n    <a href=\"#\" onclick=\"hide(&#39;Framework-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Application-Trace&#39;);;
+        return false;\">Application Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Full-Trace&#39;);show(&#39;Framework-Trace&#39;);;
+        return false;\">Framework Trace</a> |\n    <a href=\"#\" onclick=\"hide(&#39;Application-Trace&#39;);hide(&#39;Framework-Trace&#39;);show(&#39;Full-Trace&#39;);;
+        return false;\">Full Trace</a> \n\n    <div id=\"Application-Trace\" style=\"display:
+        block;\">\n      <pre><code></code></pre>\n    </div>\n    <div id=\"Framework-Trace\"
+        style=\"display: none;\">\n      <pre><code><a class=\"trace-frames\" data-frame-id=\"0\"
+        href=\"#\">actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"1\" href=\"#\">web-console
+        (2.2.1) lib/web_console/middleware.rb:39:in `call&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"2\" href=\"#\">actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"3\" href=\"#\">railties
+        (4.2.4) lib/rails/rack/logger.rb:38:in `call_app&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"4\" href=\"#\">railties (4.2.4) lib/rails/rack/logger.rb:20:in
+        `block in call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"5\" href=\"#\">activesupport
+        (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;</a><br><a
+        class=\"trace-frames\" data-frame-id=\"6\" href=\"#\">activesupport (4.2.4)
+        lib/active_support/tagged_logging.rb:26:in `tagged&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"7\" href=\"#\">activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in
+        `tagged&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"8\" href=\"#\">railties
+        (4.2.4) lib/rails/rack/logger.rb:20:in `call&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"9\" href=\"#\">actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"10\" href=\"#\">rack
+        (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"11\" href=\"#\">rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;</a><br><a
+        class=\"trace-frames\" data-frame-id=\"12\" href=\"#\">activesupport (4.2.4)
+        lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;</a><br><a
+        class=\"trace-frames\" data-frame-id=\"13\" href=\"#\">rack (1.6.4) lib/rack/lock.rb:17:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"14\" href=\"#\">actionpack
+        (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call&#39;</a><br><a
+        class=\"trace-frames\" data-frame-id=\"15\" href=\"#\">rack (1.6.4) lib/rack/sendfile.rb:113:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"16\" href=\"#\">railties
+        (4.2.4) lib/rails/engine.rb:518:in `call&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"17\" href=\"#\">railties (4.2.4) lib/rails/application.rb:165:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"18\" href=\"#\">rack
+        (1.6.4) lib/rack/lock.rb:17:in `call&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"19\" href=\"#\">rack (1.6.4) lib/rack/content_length.rb:15:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"20\" href=\"#\">rack
+        (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"21\" href=\"#\">/Users/michael_wong/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in
+        `service&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"22\" href=\"#\">/Users/michael_wong/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in
+        `run&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"23\" href=\"#\">/Users/michael_wong/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in
+        `block in start_thread&#39;</a><br></code></pre>\n    </div>\n    <div id=\"Full-Trace\"
+        style=\"display: none;\">\n      <pre><code><a class=\"trace-frames\" data-frame-id=\"0\"
+        href=\"#\">actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"1\" href=\"#\">web-console
+        (2.2.1) lib/web_console/middleware.rb:39:in `call&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"2\" href=\"#\">actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"3\" href=\"#\">railties
+        (4.2.4) lib/rails/rack/logger.rb:38:in `call_app&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"4\" href=\"#\">railties (4.2.4) lib/rails/rack/logger.rb:20:in
+        `block in call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"5\" href=\"#\">activesupport
+        (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged&#39;</a><br><a
+        class=\"trace-frames\" data-frame-id=\"6\" href=\"#\">activesupport (4.2.4)
+        lib/active_support/tagged_logging.rb:26:in `tagged&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"7\" href=\"#\">activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in
+        `tagged&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"8\" href=\"#\">railties
+        (4.2.4) lib/rails/rack/logger.rb:20:in `call&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"9\" href=\"#\">actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"10\" href=\"#\">rack
+        (1.6.4) lib/rack/methodoverride.rb:22:in `call&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"11\" href=\"#\">rack (1.6.4) lib/rack/runtime.rb:18:in `call&#39;</a><br><a
+        class=\"trace-frames\" data-frame-id=\"12\" href=\"#\">activesupport (4.2.4)
+        lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call&#39;</a><br><a
+        class=\"trace-frames\" data-frame-id=\"13\" href=\"#\">rack (1.6.4) lib/rack/lock.rb:17:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"14\" href=\"#\">actionpack
+        (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call&#39;</a><br><a
+        class=\"trace-frames\" data-frame-id=\"15\" href=\"#\">rack (1.6.4) lib/rack/sendfile.rb:113:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"16\" href=\"#\">railties
+        (4.2.4) lib/rails/engine.rb:518:in `call&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"17\" href=\"#\">railties (4.2.4) lib/rails/application.rb:165:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"18\" href=\"#\">rack
+        (1.6.4) lib/rack/lock.rb:17:in `call&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"19\" href=\"#\">rack (1.6.4) lib/rack/content_length.rb:15:in
+        `call&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"20\" href=\"#\">rack
+        (1.6.4) lib/rack/handler/webrick.rb:88:in `service&#39;</a><br><a class=\"trace-frames\"
+        data-frame-id=\"21\" href=\"#\">/Users/michael_wong/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in
+        `service&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"22\" href=\"#\">/Users/michael_wong/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in
+        `run&#39;</a><br><a class=\"trace-frames\" data-frame-id=\"23\" href=\"#\">/Users/michael_wong/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in
+        `block in start_thread&#39;</a><br></code></pre>\n    </div>\n\n  <script
+        type=\"text/javascript\">\n    var traceFrames = document.getElementsByClassName('trace-frames');\n
+        \   var selectedFrame, currentSource = document.getElementById('frame-source-0');\n\n
+        \   // Add click listeners for all stack frames\n    for (var i = 0; i < traceFrames.length;
+        i++) {\n      traceFrames[i].addEventListener('click', function(e) {\n        e.preventDefault();\n
+        \       var target = e.target;\n        var frame_id = target.dataset.frameId;\n\n
+        \       if (selectedFrame) {\n          selectedFrame.className = selectedFrame.className.replace(\"selected\",
+        \"\");\n        }\n\n        target.className += \" selected\";\n        selectedFrame
+        = target;\n\n        // Change the extracted source code\n        changeSourceExtract(frame_id);\n
+        \     });\n\n      function changeSourceExtract(frame_id) {\n        var el
+        = document.getElementById('frame-source-' + frame_id);\n        if (currentSource
+        && el) {\n          currentSource.className += \" hidden\";\n          el.className
+        = el.className.replace(\" hidden\", \"\");\n          currentSource = el;\n
+        \       }\n      }\n    }\n  </script>\n</div>\n\n\n    <h2>\n      Routes\n
+        \   </h2>\n\n    <p>\n      Routes match in priority from top to bottom\n
+        \   </p>\n\n    \n<table id='route_table' class='route_table'>\n  <thead>\n
+        \   <tr>\n      <th>Helper</th>\n      <th>HTTP Verb</th>\n      <th>Path</th>\n
+        \     <th>Controller#Action</th>\n    </tr>\n    <tr class='bottom'>\n      <th>\n
+        \       <a data-route-helper=\"_path\" title=\"Returns a relative path (without
+        the http or domain)\" href=\"#\">Path</a> /\n        <a data-route-helper=\"_url\"
+        title=\"Returns an absolute url (with the http and domain)\" href=\"#\">Url</a>\n
+        \     </th>\n      <th>\n      </th>\n      <th>\n        <input id=\"search\"
+        placeholder=\"Path Match\" type=\"search\" name=\"path[]\" />\n      </th>\n
+        \     <th>\n      </th>\n    </tr>\n  </thead>\n  <tbody class='exact_matches'
+        id='exact_matches'>\n  </tbody>\n  <tbody class='fuzzy_matches' id='fuzzy_matches'>\n
+        \ </tbody>\n  <tbody>\n    <tr class='route_row' data-helper='path'>\n  <td
+        data-route-name='root'>\n      root<span class='helper'>_path</span>\n  </td>\n
+        \ <td data-route-verb='GET'>\n    GET\n  </td>\n  <td data-route-path='/'
+        data-regexp='^\\/$'>\n    /\n  </td>\n  <td data-route-reqs='welcome#index'>\n
+        \   welcome#index\n  </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n
+        \ <td data-route-name='routes'>\n      routes<span class='helper'>_path</span>\n
+        \ </td>\n  <td data-route-verb='GET'>\n    GET\n  </td>\n  <td data-route-path='/routes(.:format)'
+        data-regexp='^\\/routes(?:\\.([^\\/.?]+))?$'>\n    /routes(.:format)\n  </td>\n
+        \ <td data-route-reqs='routes#index'>\n    routes#index\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='route'>\n      route<span
+        class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n    GET\n
+        \ </td>\n  <td data-route-path='/routes/:id(.:format)' data-regexp='^\\/routes\\/([^\\/.?]+)(?:\\.([^\\/.?]+))?$'>\n
+        \   /routes/:id(.:format)\n  </td>\n  <td data-route-reqs='routes#show'>\n
+        \   routes#show\n  </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n
+        \ <td data-route-name='near_by'>\n      near_by<span class='helper'>_path</span>\n
+        \ </td>\n  <td data-route-verb='GET'>\n    GET\n  </td>\n  <td data-route-path='/near_by(.:format)'
+        data-regexp='^\\/near_by(?:\\.([^\\/.?]+))?$'>\n    /near_by(.:format)\n  </td>\n
+        \ <td data-route-reqs='welcome#near_by'>\n    welcome#near_by\n  </td>\n</tr>\n<tr
+        class='route_row' data-helper='path'>\n  <td data-route-name='login'>\n      login<span
+        class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n    GET\n
+        \ </td>\n  <td data-route-path='/auth/twitter(.:format)' data-regexp='^\\/auth\\/twitter(?:\\.([^\\/.?]+))?$'>\n
+        \   /auth/twitter(.:format)\n  </td>\n  <td data-route-reqs='auth#twitter'>\n
+        \   auth#twitter\n  </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n
+        \ <td data-route-name='auth_twitter_callback'>\n      auth_twitter_callback<span
+        class='helper'>_path</span>\n  </td>\n  <td data-route-verb='GET'>\n    GET\n
+        \ </td>\n  <td data-route-path='/auth/twitter/callback(.:format)' data-regexp='^\\/auth\\/twitter\\/callback(?:\\.([^\\/.?]+))?$'>\n
+        \   /auth/twitter/callback(.:format)\n  </td>\n  <td data-route-reqs='sessions#create'>\n
+        \   sessions#create\n  </td>\n</tr>\n<tr class='route_row' data-helper='path'>\n
+        \ <td data-route-name='logout'>\n      logout<span class='helper'>_path</span>\n
+        \ </td>\n  <td data-route-verb='GET'>\n    GET\n  </td>\n  <td data-route-path='/logout(.:format)'
+        data-regexp='^\\/logout(?:\\.([^\\/.?]+))?$'>\n    /logout(.:format)\n  </td>\n
+        \ <td data-route-reqs='sessions#destroy'>\n    sessions#destroy\n  </td>\n</tr>\n\n
+        \ </tbody>\n</table>\n\n<script type='text/javascript'>\n  // Iterates each
+        element through a function\n  function each(elems, func) {\n    if (!elems
+        instanceof Array) { elems = [elems]; }\n    for (var i = 0, len = elems.length;
+        i < len; i++) {\n      func(elems[i]);\n    }\n  }\n\n  // Sets innerHTML
+        for an element\n  function setContent(elem, text) {\n    elem.innerHTML =
+        text;\n  }\n\n  // Enables path search functionality\n  function setupMatchPaths()
+        {\n    // Check if the user input (sanitized as a path) matches the regexp
+        data attribute\n    function checkExactMatch(section, elem, value) {\n      var
+        string = sanitizePath(value),\n          regexp = elem.getAttribute(\"data-regexp\");\n\n
+        \     showMatch(string, regexp, section, elem);\n    }\n\n    // Check if
+        the route path data attribute contains the user input\n    function checkFuzzyMatch(section,
+        elem, value) {\n      var string = elem.getAttribute(\"data-route-path\"),\n
+        \         regexp = value;\n\n      showMatch(string, regexp, section, elem);\n
+        \   }\n\n    // Display the parent <tr> element in the appropriate section
+        when there's a match\n    function showMatch(string, regexp, section, elem)
+        {\n      if(string.match(RegExp(regexp))) {\n        section.appendChild(elem.parentNode.cloneNode(true));\n
+        \     }\n    }\n\n    // Check if there are any matched results in a section\n
+        \   function checkNoMatch(section, defaultText, noMatchText) {\n      if (section.innerHTML
+        === defaultText) {\n        setContent(section, defaultText + noMatchText);\n
+        \     }\n    }\n\n    // Ensure path always starts with a slash \"/\" and
+        remove params or fragments\n    function sanitizePath(path) {\n      var path
+        = path.charAt(0) == '/' ? path : \"/\" + path;\n      return path.replace(/\\#.*|\\?.*/,
+        '');\n    }\n\n    var regexpElems     = document.querySelectorAll('#route_table
+        [data-regexp]'),\n        searchElem      = document.querySelector('#search'),\n
+        \       exactMatches    = document.querySelector('#exact_matches'),\n        fuzzyMatches
+        \   = document.querySelector('#fuzzy_matches');\n\n    // Remove matches when
+        no search value is present\n    searchElem.onblur = function(e) {\n      if
+        (searchElem.value === \"\") {\n        setContent(exactMatches, \"\");\n        setContent(fuzzyMatches,
+        \"\");\n      }\n    }\n\n    // On key press perform a search for matching
+        paths\n    searchElem.onkeyup = function(e){\n      var userInput         =
+        searchElem.value,\n          defaultExactMatch = '<tr><th colspan=\"4\">Paths
+        Matching (' + escape(sanitizePath(userInput)) +'):</th></tr>',\n          defaultFuzzyMatch
+        = '<tr><th colspan=\"4\">Paths Containing (' + escape(userInput) +'):</th></tr>',\n
+        \         noExactMatch      = '<tr><th colspan=\"4\">No Exact Matches Found</th></tr>',\n
+        \         noFuzzyMatch      = '<tr><th colspan=\"4\">No Fuzzy Matches Found</th></tr>';\n\n
+        \     // Clear out results section\n      setContent(exactMatches, defaultExactMatch);\n
+        \     setContent(fuzzyMatches, defaultFuzzyMatch);\n\n      // Display exact
+        matches and fuzzy matches\n      each(regexpElems, function(elem) {\n        checkExactMatch(exactMatches,
+        elem, userInput);\n        checkFuzzyMatch(fuzzyMatches, elem, userInput);\n
+        \     })\n\n      // Display 'No Matches' message when no matches are found\n
+        \     checkNoMatch(exactMatches, defaultExactMatch, noExactMatch);\n      checkNoMatch(fuzzyMatches,
+        defaultFuzzyMatch, noFuzzyMatch);\n    }\n  }\n\n  // Enables functionality
+        to toggle between `_path` and `_url` helper suffixes\n  function setupRouteToggleHelperLinks()
+        {\n\n    // Sets content for each element\n    function setValOn(elems, val)
+        {\n      each(elems, function(elem) {\n        setContent(elem, val);\n      });\n
+        \   }\n\n    // Sets onClick event for each element\n    function onClick(elems,
+        func) {\n      each(elems, function(elem) {\n        elem.onclick = func;\n
+        \     });\n    }\n\n    var toggleLinks = document.querySelectorAll('#route_table
+        [data-route-helper]');\n    onClick(toggleLinks, function(){\n      var helperTxt
+        \  = this.getAttribute(\"data-route-helper\"),\n          helperElems = document.querySelectorAll('[data-route-name]
+        span.helper');\n\n      setValOn(helperElems, helperTxt);\n    });\n  }\n\n
+        \ setupMatchPaths();\n  setupRouteToggleHelperLinks();\n</script>\n\n\n  \n\n<h2
+        style=\"margin-top: 30px\">Request</h2>\n<p><b>Parameters</b>:</p> <pre>None</pre>\n\n<div
+        class=\"details\">\n  <div class=\"summary\"><a href=\"#\" onclick=\"return
+        toggleSessionDump()\">Toggle session dump</a></div>\n  <div id=\"session_dump\"
+        style=\"display:none\"><pre></pre></div>\n</div>\n\n<div class=\"details\">\n
+        \ <div class=\"summary\"><a href=\"#\" onclick=\"return toggleEnvDump()\">Toggle
+        env dump</a></div>\n  <div id=\"env_dump\" style=\"display:none\"><pre>GATEWAY_INTERFACE:
+        &quot;CGI/1.1&quot;\nHTTP_ACCEPT: &quot;*/*&quot;\nHTTP_ACCEPT_ENCODING: &quot;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&quot;\nREMOTE_ADDR:
+        &quot;::1&quot;\nREMOTE_HOST: &quot;::1&quot;\nSERVER_NAME: &quot;localhost&quot;\nSERVER_PROTOCOL:
+        &quot;HTTP/1.1&quot;</pre></div>\n</div>\n\n<h2 style=\"margin-top: 30px\">Response</h2>\n<p><b>Headers</b>:</p>
+        <pre>None</pre>\n\n</div>\n\n\n</body>\n</html>\n<div id=\"console\"\n  data-remote-path='console/repl_sessions/1dc77ae4546b684b2f25701efd458739'\n
+        \ data-initial-prompt='>> '>\n</div>\n\n\n<script type=\"text/javascript\">\n(function()
+        {\n  /**\n * Constructor for command storage.\n * It uses localStorage if
+        available. Otherwise fallback to normal JS array.\n */\nfunction CommandStorage()
+        {\n  this.previousCommands = [];\n  var previousCommandOffset = 0;\n  var
+        hasLocalStorage = typeof window.localStorage !== 'undefined';\n  var STORAGE_KEY
+        = \"web_console_previous_commands\";\n  var MAX_STORAGE = 100;\n\n  if (hasLocalStorage)
+        {\n    this.previousCommands = JSON.parse(localStorage.getItem(STORAGE_KEY))
+        || [];\n    previousCommandOffset = this.previousCommands.length;\n  }\n\n
+        \ this.addCommand = function(command) {\n    previousCommandOffset = this.previousCommands.push(command);\n\n
+        \   if (previousCommandOffset > MAX_STORAGE) {\n      this.previousCommands.splice(0,
+        1);\n      previousCommandOffset = MAX_STORAGE;\n    }\n\n    if (hasLocalStorage)
+        {\n      localStorage.setItem(STORAGE_KEY, JSON.stringify(this.previousCommands));\n
+        \   }\n  };\n\n  this.navigate = function(offset) {\n    previousCommandOffset
+        += offset;\n\n    if (previousCommandOffset < 0) {\n      previousCommandOffset
+        = -1;\n      return null;\n    }\n\n    if (previousCommandOffset >= this.previousCommands.length)
+        {\n      previousCommandOffset = this.previousCommands.length;\n      return
+        null;\n    }\n\n    return this.previousCommands[previousCommandOffset];\n
+        \ }\n}\n\n// HTML strings for dynamic elements.\nvar consoleInnerHtml = \"<div
+        class=\\'resizer layer\\'><\\/div>\\n<div class=\\'console-outer layer\\'>\\n
+        \ <div class=\\'console-actions\\'>\\n    <div class=\\'close-button button\\'
+        title=\\'close\\'>x<\\/div>\\n  <\\/div>\\n  <div class=\\'console-inner\\'><\\/div>\\n<\\/div>\\n<input
+        class=\\'clipboard\\' type=\\'text\\'>\\n\"\n;\nvar promptBoxHtml = \"<span
+        class=\\'console-prompt-label\\'><\\/span>\\n<pre class=\\'console-prompt-display\\'><\\/pre>\\n\"\n;\n//
+        CSS\nvar consoleStyleCss = \".console .pos-absolute { position: absolute;
+        }\\n.console .pos-fixed { position: fixed; }\\n.console .pos-right { right:
+        0; }\\n.console .border-box { box-sizing: border-box; }\\n.console .layer
+        { width: 100%; height: 100%; }\\n.console .layer.console-outer { z-index:
+        1; }\\n.console .layer.resizer { z-index: 2; }\\n.console { position: fixed;
+        left: 0; bottom: 0; width: 100%; height: 148px; padding: 0; margin: 0; background:
+        none repeat scroll 0% 0% #333; z-index: 9999; }\\n.console .console-outer
+        { overflow: auto; padding-top: 4px; }\\n.console .console-inner { font-family:
+        monospace; font-size: 11px; width: 100%; height: 100%; overflow: none; background:
+        #333; }\\n.console .console-prompt-box { color: #FFF; }\\n.console .console-message
+        { color: #1AD027; margin: 0; border: 0; white-space: pre-wrap; background-color:
+        #333; padding: 0; }\\n.console .console-focus .console-cursor { background:
+        #FEFEFE; color: #333; font-weight: bold; }\\n.console .resizer { background:
+        #333; width: 100%; height: 4px; cursor: ns-resize; }\\n.console .console-actions
+        { padding-right: 3px; }\\n.console .console-actions .button { float: left;
+        }\\n.console .button { cursor: pointer; border-radius: 1px; font-family: monospace;
+        font-size: 13px; width: 14px; height: 14px; line-height: 14px; text-align:
+        center; color: #ccc; }\\n.console .button:hover { background: #666; color:
+        #fff; }\\n.console .button.close-button:hover { background: #966; }\\n.console
+        .clipboard { height: 0px; padding: 0px; margin: 0px; width: 0px; margin-left:
+        -1000px; }\\n.console .console-prompt-label { display: inline; color: #FFF;
+        background: none repeat scroll 0% 0% #333; border: 0; padding: 0; }\\n.console
+        .console-prompt-display { display: inline; color: #FFF; background: none repeat
+        scroll 0% 0% #333; border: 0; padding: 0; }\\n\"\n;\n// Insert a style element
+        with the unique ID\nvar styleElementId = 'sr02459pvbvrmhco';\n\n// REPLConsole
+        Constructor\nfunction REPLConsole(config) {\n  this.commandStorage = new CommandStorage();\n
+        \ this.prompt = config && config.promptLabel ? config.promptLabel : ' >>';\n
+        \ this.commandHandle = config && config.commandHandle ? config.commandHandle
+        : function() { return this; }\n}\n\n\nREPLConsole.prototype.install = function(container)
+        {\n  var _this = this;\n\n  document.onkeydown = function(ev) {\n    if (_this.focused)
+        { _this.onKeyDown(ev); }\n  };\n\n  document.onkeypress = function(ev) {\n
+        \   if (_this.focused) { _this.onKeyPress(ev); }\n  };\n\n  document.addEventListener('mousedown',
+        function(ev) {\n    var el = ev.target || ev.srcElement;\n\n    if (el) {\n
+        \     do {\n        if (el === container) {\n          _this.focus();\n          return;\n
+        \       }\n      } while (el = el.parentNode);\n\n      _this.blur();\n    }\n
+        \ });\n\n  // Render the console.\n  container.innerHTML = consoleInnerHtml;\n\n
+        \ var consoleOuter = findChild(container, 'console-outer');\n  var consoleActions
+        = findChild(consoleOuter, 'console-actions');\n\n  addClass(container, 'console');\n
+        \ addClass(container.getElementsByClassName('layer'), 'pos-absolute border-box');\n
+        \ addClass(container.getElementsByClassName('button'), 'border-box');\n  addClass(consoleActions,
+        'pos-fixed pos-right');\n\n  // Make the console resizable.\n  function resizeContainer(ev)
+        {\n    var startY                   = ev.clientY;\n    var startHeight              =
+        parseInt(document.defaultView.getComputedStyle(container).height, 10);\n    var
+        scrollTopStart      = consoleOuter.scrollTop;\n    var clientHeightStart   =
+        consoleOuter.clientHeight;\n\n    var doDrag = function(e) {\n      container.style.height
+        = (startHeight + startY - e.clientY) + 'px';\n      consoleOuter.scrollTop
+        = scrollTopStart + (clientHeightStart - consoleOuter.clientHeight);\n      shiftConsoleActions();\n
+        \   };\n\n    var stopDrag = function(e) {\n      document.documentElement.removeEventListener('mousemove',
+        doDrag, false);\n      document.documentElement.removeEventListener('mouseup',
+        stopDrag, false);\n    };\n\n    document.documentElement.addEventListener('mousemove',
+        doDrag, false);\n    document.documentElement.addEventListener('mouseup',
+        stopDrag, false);\n  }\n\n  function closeContainer(ev) {\n    container.parentNode.removeChild(container);\n
+        \ }\n\n  var shifted = false;\n  function shiftConsoleActions() {\n    if
+        (consoleOuter.scrollHeight > consoleOuter.clientHeight) {\n      var widthDiff
+        = document.documentElement.clientWidth - consoleOuter.clientWidth;\n      if
+        (shifted || ! widthDiff) return;\n      shifted = true;\n      consoleActions.style.marginRight
+        = widthDiff + 'px';\n    } else if (shifted) {\n      shifted = false;\n      consoleActions.style.marginRight
+        = '0px';\n    }\n  }\n\n  // Initialize\n  this.outer = consoleOuter;\n  this.inner
+        = findChild(this.outer, 'console-inner');\n  this.clipboard = findChild(container,
+        'clipboard');\n  this.remotePath = container.dataset.remotePath;\n  this.newPromptBox();\n
+        \ this.insertCss();\n\n  findChild(container, 'resizer').addEventListener('mousedown',
+        resizeContainer);\n  findChild(consoleActions, 'close-button').addEventListener('click',
+        closeContainer);\n  consoleOuter.addEventListener('DOMNodeInserted', shiftConsoleActions);\n\n
+        \ REPLConsole.currentSession = this;\n};\n\n// Add CSS styles dynamically.
+        This probably doesnt work for IE <8.\nREPLConsole.prototype.insertCss = function()
+        {\n  if (document.getElementById(styleElementId)) {\n    return; // already
+        inserted\n  }\n  var style = document.createElement('style');\n  style.type
+        = 'text/css';\n  style.innerHTML = consoleStyleCss;\n  style.id = styleElementId;\n
+        \ document.getElementsByTagName('head')[0].appendChild(style);\n};\n\nREPLConsole.prototype.focus
+        = function() {\n  if (! this.focused) {\n    this.focused = true;\n    if
+        (! hasClass(this.inner, \"console-focus\")) {\n      addClass(this.inner,
+        \"console-focus\");\n    }\n    this.scrollToBottom();\n  }\n};\n\nREPLConsole.prototype.blur
+        = function() {\n  this.focused = false;\n  removeClass(this.inner, \"console-focus\");\n};\n\n/**\n
+        * Add a new empty prompt box to the console.\n */\nREPLConsole.prototype.newPromptBox
+        = function() {\n  // Remove the caret from previous prompt display if any.\n
+        \ if (this.promptDisplay) {\n    this.removeCaretFromPrompt();\n  }\n\n  var
+        promptBox = document.createElement('div');\n  promptBox.className = \"console-prompt-box\";\n
+        \ promptBox.innerHTML = promptBoxHtml;\n  this.promptLabel = promptBox.getElementsByClassName('console-prompt-label')[0];\n
+        \ this.promptDisplay = promptBox.getElementsByClassName('console-prompt-display')[0];\n
+        \ // Render the prompt box\n  this.setInput(\"\");\n  this.promptLabel.innerHTML
+        = this.prompt;\n  this.inner.appendChild(promptBox);\n  this.scrollToBottom();\n};\n\n/**\n
+        * Remove the caret from the prompt box,\n * mainly before adding a new prompt
+        box.\n * For simplicity, just re-render the prompt box\n * with caret position
+        -1.\n */\nREPLConsole.prototype.removeCaretFromPrompt = function() {\n  this.setInput(this._input,
+        -1);\n};\n\nREPLConsole.prototype.setInput = function(input, caretPos) {\n
+        \ this._caretPos = caretPos === undefined ? input.length : caretPos;\n  this._input
+        = input;\n  this.renderInput();\n};\n\n/**\n * Add some text to the existing
+        input.\n */\nREPLConsole.prototype.addToInput = function(val, caretPos) {\n
+        \ caretPos = caretPos || this._caretPos;\n  var before = this._input.substring(0,
+        caretPos);\n  var after = this._input.substring(caretPos, this._input.length);\n
+        \ var newInput =  before + val + after;\n  this.setInput(newInput, caretPos
+        + val.length);\n};\n\n/**\n * Render the input prompt. This is called whenever\n
+        * the user input changes, sometimes not very efficient.\n */\nREPLConsole.prototype.renderInput
+        = function() {\n  // Clear the current input.\n  removeAllChildren(this.promptDisplay);\n\n
+        \ var promptCursor = document.createElement('span');\n  promptCursor.className
+        = \"console-cursor\";\n  var before, current, after;\n\n  if (this._caretPos
+        < 0) {\n    before = this._input;\n    current = after = \"\";\n  } else if
+        (this._caretPos === this._input.length) {\n    before = this._input;\n    current
+        = \"\\u00A0\";\n    after = \"\";\n  } else {\n    before = this._input.substring(0,
+        this._caretPos);\n    current = this._input.charAt(this._caretPos);\n    after
+        = this._input.substring(this._caretPos + 1, this._input.length);\n  }\n\n
+        \ this.promptDisplay.appendChild(document.createTextNode(before));\n  promptCursor.appendChild(document.createTextNode(current));\n
+        \ this.promptDisplay.appendChild(promptCursor);\n  this.promptDisplay.appendChild(document.createTextNode(after));\n};\n\nREPLConsole.prototype.writeOutput
+        = function(output) {\n  var consoleMessage = document.createElement('pre');\n
+        \ consoleMessage.className = \"console-message\";\n  consoleMessage.innerHTML
+        = escapeHTML(output);\n  this.inner.appendChild(consoleMessage);\n  this.newPromptBox();\n};\n\nREPLConsole.prototype.onEnterKey
+        = function() {\n  var input = this._input;\n\n  if(input != \"\" && input
+        !== undefined) {\n    this.commandStorage.addCommand(input);\n  }\n\n  this.commandHandle(input);\n};\n\nREPLConsole.prototype.onNavigateHistory
+        = function(offset) {\n  var command = this.commandStorage.navigate(offset)
+        || \"\";\n  this.setInput(command);\n};\n\n/**\n * Handle control keys like
+        up, down, left, right.\n */\nREPLConsole.prototype.onKeyDown = function(ev)
+        {\n  switch (ev.keyCode) {\n    case 13:\n      // Enter key\n      this.onEnterKey();\n
+        \     ev.preventDefault();\n      break;\n    case 80:\n      // Ctrl-P\n
+        \     if (! ev.ctrlKey) break;\n    case 38:\n      // Up arrow\n      this.onNavigateHistory(-1);\n
+        \     ev.preventDefault();\n      break;\n    case 78:\n      // Ctrl-N\n
+        \     if (! ev.ctrlKey) break;\n    case 40:\n      // Down arrow\n      this.onNavigateHistory(1);\n
+        \     ev.preventDefault();\n      break;\n    case 37:\n      // Left arrow\n
+        \     var caretPos = this._caretPos > 0 ? this._caretPos - 1 : this._caretPos;\n
+        \     this.setInput(this._input, caretPos);\n      ev.preventDefault();\n
+        \     break;\n    case 39:\n      // Right arrow\n      var length = this._input.length;\n
+        \     var caretPos = this._caretPos < length ? this._caretPos + 1 : this._caretPos;\n
+        \     this.setInput(this._input, caretPos);\n      ev.preventDefault();\n
+        \     break;\n    case 8:\n      // Delete\n      this.deleteAtCurrent();\n
+        \     ev.preventDefault();\n      break;\n    default:\n      break;\n  }\n\n
+        \ if (ev.ctrlKey || ev.metaKey) {\n    // Set focus to our clipboard in case
+        they hit the \"v\" key\n    this.clipboard.focus();\n    if (ev.keyCode ==
+        86) {\n      // Pasting to clipboard doesn't happen immediately,\n      //
+        so we have to wait for a while to get the pasted text.\n      var _this =
+        this;\n      setTimeout(function() {\n        _this.addToInput(_this.clipboard.value);\n
+        \       _this.clipboard.value = \"\";\n        _this.clipboard.blur();\n      },
+        10);\n    }\n  }\n\n  ev.stopPropagation();\n};\n\n/**\n * Handle input key
+        press.\n */\nREPLConsole.prototype.onKeyPress = function(ev) {\n  // Only
+        write to the console if it's a single key press.\n  if (ev.ctrlKey || ev.metaKey)
+        { return; }\n  var keyCode = ev.keyCode || ev.which;\n  this.insertAtCurrent(String.fromCharCode(keyCode));\n
+        \ ev.stopPropagation();\n  ev.preventDefault();\n};\n\n/**\n * Delete a character
+        at the current position.\n */\nREPLConsole.prototype.deleteAtCurrent = function()
+        {\n  if (this._caretPos > 0) {\n    var caretPos = this._caretPos - 1;\n    var
+        before = this._input.substring(0, caretPos);\n    var after = this._input.substring(this._caretPos,
+        this._input.length);\n    this.setInput(before + after, caretPos);\n  }\n};\n\n/**\n
+        * Insert a character at the current position.\n */\nREPLConsole.prototype.insertAtCurrent
+        = function(char) {\n  var before = this._input.substring(0, this._caretPos);\n
+        \ var after = this._input.substring(this._caretPos, this._input.length);\n
+        \ this.setInput(before + char + after, this._caretPos + 1);\n};\n\nREPLConsole.prototype.scrollToBottom
+        = function() {\n  this.outer.scrollTop = this.outer.scrollHeight;\n};\n\n//
+        Change the binding of the console\nREPLConsole.prototype.switchBindingTo =
+        function(frameId, callback) {\n  var url = this.remotePath + \"/trace\";\n
+        \ var params = \"frame_id=\" + encodeURIComponent(frameId);\n  postRequest(url,
+        params, callback);\n};\n\n/**\n * Install the console into the element with
+        a specific ID.\n * Example: REPLConsole.installInto(\"target-id\")\n */\nREPLConsole.installInto
+        = function(id) {\n  var consoleElement = document.getElementById(id);\n  var
+        remotePath = consoleElement.dataset.remotePath;\n  var replConsole = new REPLConsole({\n
+        \   promptLabel: consoleElement.dataset.initialPrompt,\n    commandHandle:
+        function(line) {\n      var _this = this;\n      var url = remotePath;\n      var
+        params = \"input=\" + encodeURIComponent(line);\n      putRequest(url, params,
+        function(xhr) {\n        var response = JSON.parse(xhr.responseText);\n        _this.writeOutput(response.output);\n
+        \     });\n    }\n  });\n\n  replConsole.install(consoleElement);\n  return
+        replConsole;\n};\n\n// This is to store the latest single session, and the
+        stored session\n// is updated by the REPLConsole#install() method.\n// It
+        allows to operate the current session from the other scripts.\nREPLConsole.currentSession
+        = null;\n\n// DOM helpers\nfunction hasClass(el, className) {\n  var regex
+        = new RegExp('(?:^|\\\\s)' + className + '(?!\\\\S)', 'g');\n  return el.className
+        && el.className.match(regex);\n}\n\nfunction isNodeList(el) {\n  return typeof
+        el.length === 'number' &&\n    typeof el.item === 'function';\n}\n\nfunction
+        addClass(el, className) {\n  if (isNodeList(el)) {\n    for (var i = 0; i
+        < el.length; ++ i) {\n      addClass(el[i], className);\n    }\n  } else {\n
+        \   el.className += \" \" + className;\n  }\n}\n\nfunction removeClass(el,
+        className) {\n  var regex = new RegExp('(?:^|\\\\s)' + className + '(?!\\\\S)',
+        'g');\n  el.className = el.className.replace(regex, '');\n}\n\nfunction removeAllChildren(el)
+        {\n  while (el.firstChild) {\n    el.removeChild(el.firstChild);\n  }\n}\n\nfunction
+        findChild(el, className) {\n  for (var i = 0; i < el.childNodes.length; ++
+        i) {\n    if (hasClass(el.childNodes[i], className)) {\n      return el.childNodes[i];\n
+        \   }\n  }\n}\n\nfunction escapeHTML(html) {\n  return html\n    .replace(/&/g,
+        '&amp;')\n    .replace(/</g, '&lt;')\n    .replace(/>/g, '&gt;')\n    .replace(/\"/g,
+        '&quot;')\n    .replace(/'/g, '&#x27;')\n    .replace(/`/g, '&#x60;');\n}\n\n//
+        XHR helpers\nfunction request(method, url, params, callback) {\n  var xhr
+        = new XMLHttpRequest();\n\n  xhr.open(method, url, true);\n  xhr.setRequestHeader(\"Content-Type\",
+        \"application/x-www-form-urlencoded\");\n  xhr.setRequestHeader(\"X-Requested-With\",
+        \"XMLHttpRequest\");\n  xhr.setRequestHeader(\"Accept\", \"application/vnd.web-console.v2\");\n
+        \ xhr.send(params);\n\n  xhr.onreadystatechange = function() {\n    if (xhr.readyState
+        === 4) {\n      callback(xhr);\n    }\n  }\n}\n\nfunction postRequest(url,
+        params, callback) {\n  request(\"POST\", url, params, callback);\n}\n\nfunction
+        putRequest(url, params, callback) {\n  request(\"PUT\", url, params, callback);\n}\n\nwindow.REPLConsole
+        = REPLConsole;\n\n}).call(this);\n</script>\n\n<script type=\"text/javascript\">\n(function()
+        {\n  REPLConsole.installInto('console');\n\n}).call(this);\n</script>\n\n\n
+        \ <script type=\"text/javascript\">\n(function() {\n  // Try intercept traces
+        links in Rails 4.2.\nvar traceFrames = document.getElementsByClassName('trace-frames');\nvar
+        selectedFrame, currentSource = document.getElementById('frame-source-0');\n\n//
+        Add click listeners for all stack frames\nfor (var i = 0; i < traceFrames.length;
+        i++) {\n  traceFrames[i].addEventListener('click', function(e) {\n    e.preventDefault();\n
+        \   var target = e.target;\n    var frameId = target.dataset.frameId;\n\n
+        \   // Change the binding of the console.\n    changeBinding(frameId, function()
+        {\n      if (selectedFrame) {\n        selectedFrame.className = selectedFrame.className.replace(\"selected\",
+        \"\");\n      }\n\n      target.className += \" selected\";\n      selectedFrame
+        = target;\n    });\n\n    // Change the extracted source code\n    changeSourceExtract(frameId);\n
+        \ });\n}\n\nfunction changeBinding(frameId, callback) {\n  REPLConsole.currentSession.switchBindingTo(frameId,
+        callback);\n}\n\nfunction changeSourceExtract(frameId) {\n  var el = document.getElementById('frame-source-'
+        + frameId);\n  if (currentSource && el) {\n    currentSource.className +=
+        \" hidden\";\n    el.className = el.className.replace(\" hidden\", \"\");\n
+        \   currentSource = el;\n  }\n}\n\n// Push the error page body upwards the
+        size of the console.\n//\n// While, I wouldn't like to do that on every custom
+        page (so I don't screw\n// user's layouts), I think a lot of developers want
+        to see all of the content\n// on the default Rails error page.\n//\n// Since
+        it's quite special as is now, being a bit more special in the name of\n//
+        better user experience, won't hurt.\ndocument.addEventListener('DOMContentLoaded',
+        function() {\n  var consoleElement = document.getElementById('console');\n
+        \ var resizerElement = consoleElement.getElementsByClassName('resizer')[0];\n
+        \ var containerElement = document.getElementById('container');\n\n  function
+        setContainerElementBottomMargin(pixels) {\n    containerElement.style.marginBottom
+        = pixels + 'px';\n  }\n\n  var currentConsoleElementHeight = consoleElement.offsetHeight;\n
+        \ setContainerElementBottomMargin(currentConsoleElementHeight);\n\n  resizerElement.addEventListener('mousedown',
+        function(event) {\n    function recordConsoleElementHeight(event) {\n      resizerElement.removeEventListener('mouseup',
+        recordConsoleElementHeight);\n\n      var currentConsoleElementHeight = consoleElement.offsetHeight;\n
+        \     setContainerElementBottomMargin(currentConsoleElementHeight);\n    }\n\n
+        \   resizerElement.addEventListener('mouseup', recordConsoleElementHeight);\n
+        \ });\n});\n\n}).call(this);\n</script>\n\n"
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 08:44:55 GMT
-- request:
-    method: get
-    uri: http://localhost:3001/api/v1/trips/109470772
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"b796ec58f98db9787ac96bde4af6c20f"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 34702be5-a586-4578-8163-a501c9baaef6
-      X-Runtime:
-      - '0.364889'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.2.1/2015-02-26)
-      Date:
-      - Thu, 19 Nov 2015 08:44:56 GMT
-      Content-Length:
-      - '14407'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: '{"route_id":"0","service_id":"SA","trip_id":109470772,"trip_headsign":"Highlands
-        Ranch","direction_id":1,"stop_times":[{"trip_id":109470772,"arrival_time":"02:10:00","departure_time":"02:10:00","stop_id":34323,"stop_sequence":1,"stop_headsign":null,"name":"Union
-        Station Gate B4"},{"trip_id":109470772,"arrival_time":"02:12:31","departure_time":"02:12:31","stop_id":20102,"stop_sequence":2,"stop_headsign":null,"name":"17th
-        St \u0026 Market St"},{"trip_id":109470772,"arrival_time":"02:13:00","departure_time":"02:13:00","stop_id":17717,"stop_sequence":3,"stop_headsign":null,"name":"17th
-        St \u0026 Larimer St"},{"trip_id":109470772,"arrival_time":"02:14:26","departure_time":"02:14:26","stop_id":17715,"stop_sequence":4,"stop_headsign":null,"name":"17th
-        St \u0026 Curtis St [ Z Stop ]"},{"trip_id":109470772,"arrival_time":"02:16:00","departure_time":"02:16:00","stop_id":17712,"stop_sequence":5,"stop_headsign":null,"name":"17th
-        St \u0026 California St [ Z Stop ]"},{"trip_id":109470772,"arrival_time":"02:17:28","departure_time":"02:17:28","stop_id":17709,"stop_sequence":6,"stop_headsign":null,"name":"17th
-        St \u0026 Tremont Pl [ Z Stop ]"},{"trip_id":109470772,"arrival_time":"02:18:01","departure_time":"02:18:01","stop_id":17730,"stop_sequence":7,"stop_headsign":null,"name":"Broadway
-        \u0026 Cleveland Pl"},{"trip_id":109470772,"arrival_time":"02:19:00","departure_time":"02:19:00","stop_id":17731,"stop_sequence":8,"stop_headsign":null,"name":"Broadway
-        \u0026 W Colfax Ave"},{"trip_id":109470772,"arrival_time":"02:19:31","departure_time":"02:19:31","stop_id":12430,"stop_sequence":9,"stop_headsign":null,"name":"Broadway
-        \u0026 W 14th Ave"},{"trip_id":109470772,"arrival_time":"02:20:11","departure_time":"02:20:11","stop_id":12427,"stop_sequence":10,"stop_headsign":null,"name":"Broadway
-        \u0026 W 13th Ave"},{"trip_id":109470772,"arrival_time":"02:21:03","departure_time":"02:21:03","stop_id":17770,"stop_sequence":11,"stop_headsign":null,"name":"Broadway
-        \u0026 W 11th Ave"},{"trip_id":109470772,"arrival_time":"02:22:11","departure_time":"02:22:11","stop_id":12463,"stop_sequence":12,"stop_headsign":null,"name":"Broadway
-        \u0026 W 9th Ave"},{"trip_id":109470772,"arrival_time":"02:22:41","departure_time":"02:22:41","stop_id":18826,"stop_sequence":13,"stop_headsign":null,"name":"Broadway
-        \u0026 7th Ave"},{"trip_id":109470772,"arrival_time":"02:23:11","departure_time":"02:23:11","stop_id":17771,"stop_sequence":14,"stop_headsign":null,"name":"Broadway
-        \u0026 Speer Blvd"},{"trip_id":109470772,"arrival_time":"02:23:48","departure_time":"02:23:48","stop_id":17772,"stop_sequence":15,"stop_headsign":null,"name":"Broadway
-        \u0026 W 5th Ave"},{"trip_id":109470772,"arrival_time":"02:24:26","departure_time":"02:24:26","stop_id":17773,"stop_sequence":16,"stop_headsign":null,"name":"Broadway
-        \u0026 4th Ave"},{"trip_id":109470772,"arrival_time":"02:25:39","departure_time":"02:25:39","stop_id":17774,"stop_sequence":17,"stop_headsign":null,"name":"Broadway
-        \u0026 W 1st Ave"},{"trip_id":109470772,"arrival_time":"02:26:11","departure_time":"02:26:11","stop_id":17775,"stop_sequence":18,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Ellsworth Ave"},{"trip_id":109470772,"arrival_time":"02:26:43","departure_time":"02:26:43","stop_id":17776,"stop_sequence":19,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Bayaud Ave"},{"trip_id":109470772,"arrival_time":"02:27:16","departure_time":"02:27:16","stop_id":18461,"stop_sequence":20,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Cedar Ave"},{"trip_id":109470772,"arrival_time":"02:28:00","departure_time":"02:28:00","stop_id":12464,"stop_sequence":21,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Alameda Ave"},{"trip_id":109470772,"arrival_time":"02:29:13","departure_time":"02:29:13","stop_id":21472,"stop_sequence":22,"stop_headsign":null,"name":"Broadway
-        \u0026 W Center Ave"},{"trip_id":109470772,"arrival_time":"02:29:53","departure_time":"02:29:53","stop_id":12519,"stop_sequence":23,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Exposition Ave"},{"trip_id":109470772,"arrival_time":"02:30:16","departure_time":"02:30:16","stop_id":34429,"stop_sequence":24,"stop_headsign":null,"name":"Broadway
-        \u0026 Ohio Ave"},{"trip_id":109470772,"arrival_time":"02:31:00","departure_time":"02:32:00","stop_id":26278,"stop_sequence":25,"stop_headsign":null,"name":"I-25
-        \u0026 Broadway Station Gate B1"},{"trip_id":109470772,"arrival_time":"02:33:18","departure_time":"02:33:18","stop_id":12526,"stop_sequence":26,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Tennessee Ave"},{"trip_id":109470772,"arrival_time":"02:33:45","departure_time":"02:33:45","stop_id":12564,"stop_sequence":27,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Mississippi Ave"},{"trip_id":109470772,"arrival_time":"02:34:33","departure_time":"02:34:33","stop_id":12556,"stop_sequence":28,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Louisiana Ave"},{"trip_id":109470772,"arrival_time":"02:35:23","departure_time":"02:35:23","stop_id":12521,"stop_sequence":29,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Florida Ave"},{"trip_id":109470772,"arrival_time":"02:36:01","departure_time":"02:36:01","stop_id":12538,"stop_sequence":30,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Mexico Ave"},{"trip_id":109470772,"arrival_time":"02:36:39","departure_time":"02:36:39","stop_id":12501,"stop_sequence":31,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Colorado Ave"},{"trip_id":109470772,"arrival_time":"02:37:03","departure_time":"02:37:03","stop_id":12541,"stop_sequence":32,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Jewell Ave"},{"trip_id":109470772,"arrival_time":"02:38:00","departure_time":"02:38:00","stop_id":12517,"stop_sequence":33,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Evans Ave"},{"trip_id":109470772,"arrival_time":"02:38:41","departure_time":"02:38:41","stop_id":12536,"stop_sequence":34,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Iliff Ave"},{"trip_id":109470772,"arrival_time":"02:39:19","departure_time":"02:39:19","stop_id":12533,"stop_sequence":35,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Harvard Ave"},{"trip_id":109470772,"arrival_time":"02:40:01","departure_time":"02:40:01","stop_id":12617,"stop_sequence":36,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Yale Ave"},{"trip_id":109470772,"arrival_time":"02:40:39","departure_time":"02:40:39","stop_id":12481,"stop_sequence":37,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Bates Ave"},{"trip_id":109470772,"arrival_time":"02:41:21","departure_time":"02:41:21","stop_id":12511,"stop_sequence":38,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Dartmouth Ave"},{"trip_id":109470772,"arrival_time":"02:42:06","departure_time":"02:42:06","stop_id":22268,"stop_sequence":39,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Floyd Ave"},{"trip_id":109470772,"arrival_time":"02:42:30","departure_time":"02:42:30","stop_id":20093,"stop_sequence":40,"stop_headsign":null,"name":"Englewood
-        Pkwy \u0026 S Acoma St"},{"trip_id":109470772,"arrival_time":"02:43:16","departure_time":"02:43:16","stop_id":13514,"stop_sequence":41,"stop_headsign":null,"name":"S
-        Elati St \u0026 Englewood Pkwy"},{"trip_id":109470772,"arrival_time":"02:45:00","departure_time":"02:46:00","stop_id":26179,"stop_sequence":42,"stop_headsign":null,"name":"Englewood
-        Station Gate G"},{"trip_id":109470772,"arrival_time":"02:47:17","departure_time":"02:47:17","stop_id":20171,"stop_sequence":43,"stop_headsign":null,"name":"S
-        Elati St \u0026 Englewood Pkwy"},{"trip_id":109470772,"arrival_time":"02:48:16","departure_time":"02:48:16","stop_id":20094,"stop_sequence":44,"stop_headsign":null,"name":"Englewood
-        Pkwy \u0026 S Acoma St"},{"trip_id":109470772,"arrival_time":"02:48:57","departure_time":"02:48:57","stop_id":12530,"stop_sequence":45,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Hampden Ave"},{"trip_id":109470772,"arrival_time":"02:49:46","departure_time":"02:49:46","stop_id":12547,"stop_sequence":46,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Kenyon Ave"},{"trip_id":109470772,"arrival_time":"02:50:34","departure_time":"02:50:34","stop_id":12558,"stop_sequence":47,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Mansfield Ave"},{"trip_id":109470772,"arrival_time":"02:51:21","departure_time":"02:51:21","stop_id":12573,"stop_sequence":48,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Oxford Ave"},{"trip_id":109470772,"arrival_time":"02:52:10","departure_time":"02:52:10","stop_id":12584,"stop_sequence":49,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Quincy Ave"},{"trip_id":109470772,"arrival_time":"02:52:58","departure_time":"02:52:58","stop_id":12595,"stop_sequence":50,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Stanford Ave"},{"trip_id":109470772,"arrival_time":"02:53:47","departure_time":"02:53:47","stop_id":12607,"stop_sequence":51,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Union Ave"},{"trip_id":109470772,"arrival_time":"02:54:35","departure_time":"02:54:35","stop_id":12497,"stop_sequence":52,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Chenango Ave"},{"trip_id":109470772,"arrival_time":"02:55:31","departure_time":"02:55:31","stop_id":12483,"stop_sequence":53,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Belleview Ave"},{"trip_id":109470772,"arrival_time":"02:55:54","departure_time":"02:55:54","stop_id":12494,"stop_sequence":54,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Centennial Ave"},{"trip_id":109470772,"arrival_time":"02:56:32","departure_time":"02:56:32","stop_id":22056,"stop_sequence":55,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Rafferty Gardens Ave"},{"trip_id":109470772,"arrival_time":"02:57:02","departure_time":"02:57:02","stop_id":12443,"stop_sequence":56,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Powers Ave"},{"trip_id":109470772,"arrival_time":"02:58:00","departure_time":"02:58:00","stop_id":12553,"stop_sequence":57,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Littleton Blvd"},{"trip_id":109470772,"arrival_time":"02:58:27","departure_time":"02:58:27","stop_id":12486,"stop_sequence":58,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Broadmoor Dr"},{"trip_id":109470772,"arrival_time":"02:58:48","departure_time":"02:58:48","stop_id":12476,"stop_sequence":59,"stop_headsign":null,"name":"S
-        Broadway \u0026 S Bannock St"},{"trip_id":109470772,"arrival_time":"02:59:03","departure_time":"02:59:03","stop_id":20637,"stop_sequence":60,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Fair Ave"},{"trip_id":109470772,"arrival_time":"02:59:16","departure_time":"02:59:16","stop_id":12488,"stop_sequence":61,"stop_headsign":null,"name":"S
-        Broadway \u0026 Panama Dr"},{"trip_id":109470772,"arrival_time":"02:59:38","departure_time":"02:59:38","stop_id":12615,"stop_sequence":62,"stop_headsign":null,"name":"S
-        Broadway \u0026 Weaver Pl"},{"trip_id":109470772,"arrival_time":"03:00:00","departure_time":"03:00:00","stop_id":12468,"stop_sequence":63,"stop_headsign":null,"name":"S
-        Broadway \u0026 Arapahoe Rd"},{"trip_id":109470772,"arrival_time":"03:00:13","departure_time":"03:00:13","stop_id":12596,"stop_sequence":64,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Sterne Pkwy"},{"trip_id":109470772,"arrival_time":"03:00:24","departure_time":"03:00:24","stop_id":18836,"stop_sequence":65,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Ridge Rd"},{"trip_id":109470772,"arrival_time":"03:00:33","departure_time":"03:00:33","stop_id":18837,"stop_sequence":66,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Davies Ave"},{"trip_id":109470772,"arrival_time":"03:00:44","departure_time":"03:00:44","stop_id":24176,"stop_sequence":67,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Fremont Pl"},{"trip_id":109470772,"arrival_time":"03:01:02","departure_time":"03:01:02","stop_id":17609,"stop_sequence":68,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Fremont Ave"},{"trip_id":109470772,"arrival_time":"03:01:18","departure_time":"03:01:18","stop_id":19144,"stop_sequence":69,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Dry Creek Rd"},{"trip_id":109470772,"arrival_time":"03:01:41","departure_time":"03:01:41","stop_id":22217,"stop_sequence":70,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Jamison Ave"},{"trip_id":109470772,"arrival_time":"03:02:00","departure_time":"03:02:00","stop_id":20446,"stop_sequence":71,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Mineral Ave"},{"trip_id":109470772,"arrival_time":"03:02:11","departure_time":"03:02:11","stop_id":22453,"stop_sequence":72,"stop_headsign":null,"name":"S
-        Broadway \u0026 S Grant Way"},{"trip_id":109470772,"arrival_time":"03:02:21","departure_time":"03:02:21","stop_id":24460,"stop_sequence":73,"stop_headsign":null,"name":"S
-        Broadway \u0026 Southpark Dr"},{"trip_id":109470772,"arrival_time":"03:02:29","departure_time":"03:02:29","stop_id":20079,"stop_sequence":74,"stop_headsign":null,"name":"S
-        Broadway \u0026 W County Line Rd"},{"trip_id":109470772,"arrival_time":"03:02:53","departure_time":"03:02:53","stop_id":25185,"stop_sequence":75,"stop_headsign":null,"name":"Centennial
-        Blvd \u0026 S Broadway"},{"trip_id":109470772,"arrival_time":"03:02:59","departure_time":"03:02:59","stop_id":26613,"stop_sequence":76,"stop_headsign":null,"name":"Centennial
-        Blvd \u0026 S Broadway"},{"trip_id":109470772,"arrival_time":"03:03:16","departure_time":"03:03:16","stop_id":25931,"stop_sequence":77,"stop_headsign":null,"name":"Centennial
-        Blvd \u0026 Plaza Dr"},{"trip_id":109470772,"arrival_time":"03:03:24","departure_time":"03:03:24","stop_id":26614,"stop_sequence":78,"stop_headsign":null,"name":"Plaza
-        Dr \u0026 Centennial Blvd"},{"trip_id":109470772,"arrival_time":"03:04:00","departure_time":"03:04:00","stop_id":26245,"stop_sequence":79,"stop_headsign":null,"name":"Ridgeline
-        Blvd \u0026 Bluepoint Rd"},{"trip_id":109470772,"arrival_time":"03:04:49","departure_time":"03:04:49","stop_id":22906,"stop_sequence":80,"stop_headsign":null,"name":"8700
-        Block Ridgeline Blvd"},{"trip_id":109470772,"arrival_time":"03:06:17","departure_time":"03:06:17","stop_id":22907,"stop_sequence":81,"stop_headsign":null,"name":"8900
-        Block Ridgeline Blvd"},{"trip_id":109470772,"arrival_time":"03:08:32","departure_time":"03:08:32","stop_id":24947,"stop_sequence":82,"stop_headsign":null,"name":"Ridgeline
-        Blvd \u0026 Highlands Ranch Pkwy"},{"trip_id":109470772,"arrival_time":"03:10:00","departure_time":"03:10:00","stop_id":26262,"stop_sequence":83,"stop_headsign":null,"name":"Highlands
-        Ranch Town Center PnR Gate B"}]}'
-    http_version: 
-  recorded_at: Thu, 19 Nov 2015 08:44:56 GMT
-- request:
-    method: get
-    uri: http://localhost:3001/api/v1/trips/109470636
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"3762f6df4893a5aa4925c2c2136204b6"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 7e0b0f00-2e28-4b82-b40d-bcf1f9cf764a
-      X-Runtime:
-      - '0.357649'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.2.1/2015-02-26)
-      Date:
-      - Thu, 19 Nov 2015 08:44:56 GMT
-      Content-Length:
-      - '13964'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: '{"route_id":"0","service_id":"SA","trip_id":109470636,"trip_headsign":"Union
-        Station","direction_id":0,"stop_times":[{"trip_id":109470636,"arrival_time":"03:23:00","departure_time":"03:23:00","stop_id":26262,"stop_sequence":1,"stop_headsign":null,"name":"Highlands
-        Ranch Town Center PnR Gate B"},{"trip_id":109470636,"arrival_time":"03:23:58","departure_time":"03:23:58","stop_id":25602,"stop_sequence":2,"stop_headsign":null,"name":"Ridgeline
-        Blvd \u0026 Highlands Ranch Pkwy"},{"trip_id":109470636,"arrival_time":"03:24:57","departure_time":"03:24:57","stop_id":26250,"stop_sequence":3,"stop_headsign":null,"name":"8900
-        Block Ridgeline Blvd"},{"trip_id":109470636,"arrival_time":"03:25:35","departure_time":"03:25:35","stop_id":26244,"stop_sequence":4,"stop_headsign":null,"name":"8700
-        Block Ridgeline Blvd"},{"trip_id":109470636,"arrival_time":"03:26:00","departure_time":"03:26:00","stop_id":26247,"stop_sequence":5,"stop_headsign":null,"name":"Ridgeline
-        Blvd \u0026 Bluepoint Rd"},{"trip_id":109470636,"arrival_time":"03:27:47","departure_time":"03:27:47","stop_id":25676,"stop_sequence":6,"stop_headsign":null,"name":"Centennial
-        Blvd \u0026 Plaza Dr"},{"trip_id":109470636,"arrival_time":"03:28:52","departure_time":"03:28:52","stop_id":22454,"stop_sequence":7,"stop_headsign":null,"name":"Centennial
-        Blvd \u0026 S Broadway"},{"trip_id":109470636,"arrival_time":"03:30:02","departure_time":"03:30:02","stop_id":20378,"stop_sequence":8,"stop_headsign":null,"name":"S
-        Broadway \u0026 County Line Rd"},{"trip_id":109470636,"arrival_time":"03:30:44","departure_time":"03:30:44","stop_id":24461,"stop_sequence":9,"stop_headsign":null,"name":"S
-        Broadway \u0026 Southpark Dr"},{"trip_id":109470636,"arrival_time":"03:31:19","departure_time":"03:31:19","stop_id":22455,"stop_sequence":10,"stop_headsign":null,"name":"S
-        Broadway \u0026 S Grant Way"},{"trip_id":109470636,"arrival_time":"03:32:00","departure_time":"03:32:00","stop_id":17611,"stop_sequence":11,"stop_headsign":null,"name":"S
-        Broadway \u0026 Mineral Ave"},{"trip_id":109470636,"arrival_time":"03:32:20","departure_time":"03:32:20","stop_id":22218,"stop_sequence":12,"stop_headsign":null,"name":"S
-        Broadway \u0026 Jamison Ave"},{"trip_id":109470636,"arrival_time":"03:33:09","departure_time":"03:33:09","stop_id":19143,"stop_sequence":13,"stop_headsign":null,"name":"S
-        Broadway \u0026 Dry Creek Rd"},{"trip_id":109470636,"arrival_time":"03:33:52","departure_time":"03:33:52","stop_id":17610,"stop_sequence":14,"stop_headsign":null,"name":"S
-        Broadway  \u0026 Geddes Ave"},{"trip_id":109470636,"arrival_time":"03:34:09","departure_time":"03:34:09","stop_id":24177,"stop_sequence":15,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Fremont Pl"},{"trip_id":109470636,"arrival_time":"03:34:34","departure_time":"03:34:34","stop_id":18856,"stop_sequence":16,"stop_headsign":null,"name":"S
-        Broadway \u0026 S Lincoln Way"},{"trip_id":109470636,"arrival_time":"03:35:04","departure_time":"03:35:04","stop_id":12586,"stop_sequence":17,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Ridge Rd"},{"trip_id":109470636,"arrival_time":"03:35:28","departure_time":"03:35:28","stop_id":12597,"stop_sequence":18,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Sterne Pkwy"},{"trip_id":109470636,"arrival_time":"03:36:00","departure_time":"03:36:00","stop_id":12469,"stop_sequence":19,"stop_headsign":null,"name":"S
-        Broadway \u0026 Arapahoe Rd"},{"trip_id":109470636,"arrival_time":"03:36:34","departure_time":"03:36:34","stop_id":21017,"stop_sequence":20,"stop_headsign":null,"name":"S
-        Broadway \u0026 Euclid Ave"},{"trip_id":109470636,"arrival_time":"03:36:58","departure_time":"03:36:58","stop_id":12587,"stop_sequence":21,"stop_headsign":null,"name":"S
-        Broadway \u0026 Panama Dr"},{"trip_id":109470636,"arrival_time":"03:37:41","departure_time":"03:37:41","stop_id":12489,"stop_sequence":22,"stop_headsign":null,"name":"S
-        Broadway \u0026 Caley Ave"},{"trip_id":109470636,"arrival_time":"03:38:19","departure_time":"03:38:19","stop_id":12477,"stop_sequence":23,"stop_headsign":null,"name":"S
-        Broadway \u0026 S Bannock St"},{"trip_id":109470636,"arrival_time":"03:39:11","departure_time":"03:39:11","stop_id":12571,"stop_sequence":24,"stop_headsign":null,"name":"S
-        Broadway \u0026 Orchard Rd"},{"trip_id":109470636,"arrival_time":"03:40:00","departure_time":"03:40:00","stop_id":12552,"stop_sequence":25,"stop_headsign":null,"name":"S
-        Broadway \u0026 Littleton Blvd"},{"trip_id":109470636,"arrival_time":"03:40:47","departure_time":"03:40:47","stop_id":12444,"stop_sequence":26,"stop_headsign":null,"name":"S
-        Broadway \u0026 Powers Ave"},{"trip_id":109470636,"arrival_time":"03:40:57","departure_time":"03:40:57","stop_id":26200,"stop_sequence":27,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Rafferty Gardens Ave"},{"trip_id":109470636,"arrival_time":"03:41:44","departure_time":"03:41:44","stop_id":12495,"stop_sequence":28,"stop_headsign":null,"name":"S
-        Broadway \u0026 Centennial Ave"},{"trip_id":109470636,"arrival_time":"03:42:21","departure_time":"03:42:21","stop_id":12482,"stop_sequence":29,"stop_headsign":null,"name":"S
-        Broadway \u0026 Belleview Ave"},{"trip_id":109470636,"arrival_time":"03:43:04","departure_time":"03:43:04","stop_id":12498,"stop_sequence":30,"stop_headsign":null,"name":"S
-        Broadway \u0026 Chenango Ave"},{"trip_id":109470636,"arrival_time":"03:43:54","departure_time":"03:43:54","stop_id":12606,"stop_sequence":31,"stop_headsign":null,"name":"S
-        Broadway \u0026 Union Ave"},{"trip_id":109470636,"arrival_time":"03:44:38","departure_time":"03:44:38","stop_id":12594,"stop_sequence":32,"stop_headsign":null,"name":"S
-        Broadway \u0026 Stanford Ave"},{"trip_id":109470636,"arrival_time":"03:45:29","departure_time":"03:45:29","stop_id":12583,"stop_sequence":33,"stop_headsign":null,"name":"S
-        Broadway \u0026 Quincy Ave"},{"trip_id":109470636,"arrival_time":"03:46:15","departure_time":"03:46:15","stop_id":12572,"stop_sequence":34,"stop_headsign":null,"name":"S
-        Broadway \u0026 Oxford Ave"},{"trip_id":109470636,"arrival_time":"03:47:00","departure_time":"03:47:00","stop_id":12557,"stop_sequence":35,"stop_headsign":null,"name":"S
-        Broadway \u0026 Mansfield Ave"},{"trip_id":109470636,"arrival_time":"03:47:50","departure_time":"03:47:50","stop_id":12546,"stop_sequence":36,"stop_headsign":null,"name":"S
-        Broadway \u0026 Kenyon Ave"},{"trip_id":109470636,"arrival_time":"03:48:33","departure_time":"03:48:33","stop_id":12529,"stop_sequence":37,"stop_headsign":null,"name":"S
-        Broadway \u0026 Hampden Ave"},{"trip_id":109470636,"arrival_time":"03:49:10","departure_time":"03:49:10","stop_id":20093,"stop_sequence":38,"stop_headsign":null,"name":"Englewood
-        Pkwy \u0026 S Acoma St"},{"trip_id":109470636,"arrival_time":"03:50:03","departure_time":"03:50:03","stop_id":13514,"stop_sequence":39,"stop_headsign":null,"name":"S
-        Elati St \u0026 Englewood Pkwy"},{"trip_id":109470636,"arrival_time":"03:52:00","departure_time":"03:53:00","stop_id":26175,"stop_sequence":40,"stop_headsign":null,"name":"Englewood
-        Station Gate C"},{"trip_id":109470636,"arrival_time":"03:54:35","departure_time":"03:54:35","stop_id":20171,"stop_sequence":41,"stop_headsign":null,"name":"S
-        Elati St \u0026 Englewood Pkwy"},{"trip_id":109470636,"arrival_time":"03:55:42","departure_time":"03:55:42","stop_id":20094,"stop_sequence":42,"stop_headsign":null,"name":"Englewood
-        Pkwy \u0026 S Acoma St"},{"trip_id":109470636,"arrival_time":"03:56:19","departure_time":"03:56:19","stop_id":33371,"stop_sequence":43,"stop_headsign":null,"name":"S
-        Broadway \u0026 Floyd Ave"},{"trip_id":109470636,"arrival_time":"03:56:43","departure_time":"03:56:43","stop_id":12522,"stop_sequence":44,"stop_headsign":null,"name":"S
-        Broadway \u0026 Eastman Ave"},{"trip_id":109470636,"arrival_time":"03:57:28","departure_time":"03:57:28","stop_id":12510,"stop_sequence":45,"stop_headsign":null,"name":"S
-        Broadway \u0026 Dartmouth Ave"},{"trip_id":109470636,"arrival_time":"03:58:24","departure_time":"03:58:24","stop_id":12480,"stop_sequence":46,"stop_headsign":null,"name":"S
-        Broadway \u0026 Bates Ave"},{"trip_id":109470636,"arrival_time":"03:59:14","departure_time":"03:59:14","stop_id":12616,"stop_sequence":47,"stop_headsign":null,"name":"S
-        Broadway \u0026 Yale Ave"},{"trip_id":109470636,"arrival_time":"04:00:07","departure_time":"04:00:07","stop_id":12532,"stop_sequence":48,"stop_headsign":null,"name":"S
-        Broadway \u0026 Harvard Ave"},{"trip_id":109470636,"arrival_time":"04:01:02","departure_time":"04:01:02","stop_id":12535,"stop_sequence":49,"stop_headsign":null,"name":"S
-        Broadway \u0026 Iliff Ave"},{"trip_id":109470636,"arrival_time":"04:02:00","departure_time":"04:02:00","stop_id":12516,"stop_sequence":50,"stop_headsign":null,"name":"S
-        Broadway \u0026 Evans Ave"},{"trip_id":109470636,"arrival_time":"04:02:43","departure_time":"04:02:43","stop_id":12540,"stop_sequence":51,"stop_headsign":null,"name":"S
-        Broadway \u0026 Jewell Ave"},{"trip_id":109470636,"arrival_time":"04:03:05","departure_time":"04:03:05","stop_id":12500,"stop_sequence":52,"stop_headsign":null,"name":"S
-        Broadway \u0026 Colorado Ave"},{"trip_id":109470636,"arrival_time":"04:03:41","departure_time":"04:03:41","stop_id":12537,"stop_sequence":53,"stop_headsign":null,"name":"S
-        Broadway \u0026 Iowa Ave"},{"trip_id":109470636,"arrival_time":"04:04:10","departure_time":"04:04:10","stop_id":12520,"stop_sequence":54,"stop_headsign":null,"name":"S
-        Broadway \u0026 Florida Ave"},{"trip_id":109470636,"arrival_time":"04:04:54","departure_time":"04:04:54","stop_id":12555,"stop_sequence":55,"stop_headsign":null,"name":"S
-        Broadway \u0026 Louisiana Ave"},{"trip_id":109470636,"arrival_time":"04:05:38","departure_time":"04:05:38","stop_id":12563,"stop_sequence":56,"stop_headsign":null,"name":"S
-        Broadway \u0026 Mississippi Ave"},{"trip_id":109470636,"arrival_time":"04:07:00","departure_time":"04:10:00","stop_id":26280,"stop_sequence":57,"stop_headsign":null,"name":"I-25
-        \u0026 Broadway Station Gate C1"},{"trip_id":109470636,"arrival_time":"04:11:35","departure_time":"04:11:35","stop_id":14989,"stop_sequence":58,"stop_headsign":null,"name":"Walsh
-        Pl \u0026 S Lincoln St"},{"trip_id":109470636,"arrival_time":"04:12:02","departure_time":"04:12:02","stop_id":14986,"stop_sequence":59,"stop_headsign":null,"name":"S
-        Lincoln St \u0026 Exposition Ave"},{"trip_id":109470636,"arrival_time":"04:12:32","departure_time":"04:12:32","stop_id":14984,"stop_sequence":60,"stop_headsign":null,"name":"S
-        Lincoln St \u0026 Center Ave"},{"trip_id":109470636,"arrival_time":"04:13:00","departure_time":"04:13:00","stop_id":14988,"stop_sequence":61,"stop_headsign":null,"name":"S
-        Lincoln St \u0026 Virginia Ave"},{"trip_id":109470636,"arrival_time":"04:14:00","departure_time":"04:14:00","stop_id":14982,"stop_sequence":62,"stop_headsign":null,"name":"S
-        Lincoln St \u0026 Alameda Ave"},{"trip_id":109470636,"arrival_time":"04:14:31","departure_time":"04:14:31","stop_id":17778,"stop_sequence":63,"stop_headsign":null,"name":"S
-        Lincoln St \u0026 Cedar Ave"},{"trip_id":109470636,"arrival_time":"04:14:59","departure_time":"04:14:59","stop_id":17779,"stop_sequence":64,"stop_headsign":null,"name":"S
-        Lincoln St \u0026 Bayaud Ave"},{"trip_id":109470636,"arrival_time":"04:15:27","departure_time":"04:15:27","stop_id":17780,"stop_sequence":65,"stop_headsign":null,"name":"Lincoln
-        St \u0026 Ellsworth Ave"},{"trip_id":109470636,"arrival_time":"04:16:00","departure_time":"04:16:00","stop_id":14967,"stop_sequence":66,"stop_headsign":null,"name":"Lincoln
-        St \u0026 1st Ave"},{"trip_id":109470636,"arrival_time":"04:16:56","departure_time":"04:16:56","stop_id":24434,"stop_sequence":67,"stop_headsign":null,"name":"Lincoln
-        St \u0026 4th Ave"},{"trip_id":109470636,"arrival_time":"04:17:21","departure_time":"04:17:21","stop_id":17782,"stop_sequence":68,"stop_headsign":null,"name":"Lincoln
-        St \u0026 5th Ave"},{"trip_id":109470636,"arrival_time":"04:18:21","departure_time":"04:18:21","stop_id":14978,"stop_sequence":69,"stop_headsign":null,"name":"Lincoln
-        St \u0026 7th Ave"},{"trip_id":109470636,"arrival_time":"04:19:11","departure_time":"04:19:11","stop_id":17783,"stop_sequence":70,"stop_headsign":null,"name":"Lincoln
-        St \u0026 9th Ave"},{"trip_id":109470636,"arrival_time":"04:19:54","departure_time":"04:19:54","stop_id":17784,"stop_sequence":71,"stop_headsign":null,"name":"Lincoln
-        St \u0026 11th Ave"},{"trip_id":109470636,"arrival_time":"04:20:47","departure_time":"04:20:47","stop_id":14965,"stop_sequence":72,"stop_headsign":null,"name":"Lincoln
-        St \u0026 13th Ave"},{"trip_id":109470636,"arrival_time":"04:22:00","departure_time":"04:22:00","stop_id":12850,"stop_sequence":73,"stop_headsign":null,"name":"Colfax
-        Ave \u0026 Broadway"},{"trip_id":109470636,"arrival_time":"04:22:56","departure_time":"04:22:56","stop_id":17698,"stop_sequence":74,"stop_headsign":null,"name":"15th
-        St \u0026 Cleveland Pl"},{"trip_id":109470636,"arrival_time":"04:25:00","departure_time":"04:25:00","stop_id":21514,"stop_sequence":75,"stop_headsign":null,"name":"Welton
-        St \u0026 16th Street Mall"},{"trip_id":109470636,"arrival_time":"04:26:05","departure_time":"04:26:05","stop_id":18825,"stop_sequence":76,"stop_headsign":null,"name":"18th
-        St \u0026 California St"},{"trip_id":109470636,"arrival_time":"04:26:14","departure_time":"04:26:14","stop_id":17722,"stop_sequence":77,"stop_headsign":null,"name":"18th
-        St \u0026 Stout St"},{"trip_id":109470636,"arrival_time":"04:27:00","departure_time":"04:27:00","stop_id":17723,"stop_sequence":78,"stop_headsign":null,"name":"18th
-        St \u0026 Arapahoe St"},{"trip_id":109470636,"arrival_time":"04:28:00","departure_time":"04:28:00","stop_id":17833,"stop_sequence":79,"stop_headsign":null,"name":"18th
-        St \u0026 Larimer St"},{"trip_id":109470636,"arrival_time":"04:28:59","departure_time":"04:28:59","stop_id":17834,"stop_sequence":80,"stop_headsign":null,"name":"18th
-        St \u0026 Blake St"},{"trip_id":109470636,"arrival_time":"04:31:00","departure_time":"04:31:00","stop_id":34343,"stop_sequence":81,"stop_headsign":null,"name":"Union
-        Station"}]}'
-    http_version: 
-  recorded_at: Thu, 19 Nov 2015 08:44:56 GMT
-- request:
-    method: get
-    uri: http://localhost:3001/api/v1/trips/109470740
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"6853b941b7cd3ab6602bb6d5df99d79d"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - de5bb05a-9ba0-4673-845d-fcbe7d97d3b5
-      X-Runtime:
-      - '0.385325'
-      Server:
-      - WEBrick/1.3.1 (Ruby/2.2.1/2015-02-26)
-      Date:
-      - Thu, 19 Nov 2015 08:44:56 GMT
-      Content-Length:
-      - '14407'
-      Connection:
-      - Keep-Alive
-    body:
-      encoding: UTF-8
-      string: '{"route_id":"0","service_id":"SA","trip_id":109470740,"trip_headsign":"Highlands
-        Ranch","direction_id":1,"stop_times":[{"trip_id":109470740,"arrival_time":"03:40:00","departure_time":"03:40:00","stop_id":34323,"stop_sequence":1,"stop_headsign":null,"name":"Union
-        Station Gate B4"},{"trip_id":109470740,"arrival_time":"03:42:31","departure_time":"03:42:31","stop_id":20102,"stop_sequence":2,"stop_headsign":null,"name":"17th
-        St \u0026 Market St"},{"trip_id":109470740,"arrival_time":"03:43:00","departure_time":"03:43:00","stop_id":17717,"stop_sequence":3,"stop_headsign":null,"name":"17th
-        St \u0026 Larimer St"},{"trip_id":109470740,"arrival_time":"03:44:26","departure_time":"03:44:26","stop_id":17715,"stop_sequence":4,"stop_headsign":null,"name":"17th
-        St \u0026 Curtis St [ Z Stop ]"},{"trip_id":109470740,"arrival_time":"03:46:00","departure_time":"03:46:00","stop_id":17712,"stop_sequence":5,"stop_headsign":null,"name":"17th
-        St \u0026 California St [ Z Stop ]"},{"trip_id":109470740,"arrival_time":"03:47:28","departure_time":"03:47:28","stop_id":17709,"stop_sequence":6,"stop_headsign":null,"name":"17th
-        St \u0026 Tremont Pl [ Z Stop ]"},{"trip_id":109470740,"arrival_time":"03:48:01","departure_time":"03:48:01","stop_id":17730,"stop_sequence":7,"stop_headsign":null,"name":"Broadway
-        \u0026 Cleveland Pl"},{"trip_id":109470740,"arrival_time":"03:49:00","departure_time":"03:49:00","stop_id":17731,"stop_sequence":8,"stop_headsign":null,"name":"Broadway
-        \u0026 W Colfax Ave"},{"trip_id":109470740,"arrival_time":"03:49:24","departure_time":"03:49:24","stop_id":12430,"stop_sequence":9,"stop_headsign":null,"name":"Broadway
-        \u0026 W 14th Ave"},{"trip_id":109470740,"arrival_time":"03:49:55","departure_time":"03:49:55","stop_id":12427,"stop_sequence":10,"stop_headsign":null,"name":"Broadway
-        \u0026 W 13th Ave"},{"trip_id":109470740,"arrival_time":"03:50:35","departure_time":"03:50:35","stop_id":17770,"stop_sequence":11,"stop_headsign":null,"name":"Broadway
-        \u0026 W 11th Ave"},{"trip_id":109470740,"arrival_time":"03:51:28","departure_time":"03:51:28","stop_id":12463,"stop_sequence":12,"stop_headsign":null,"name":"Broadway
-        \u0026 W 9th Ave"},{"trip_id":109470740,"arrival_time":"03:51:52","departure_time":"03:51:52","stop_id":18826,"stop_sequence":13,"stop_headsign":null,"name":"Broadway
-        \u0026 7th Ave"},{"trip_id":109470740,"arrival_time":"03:52:16","departure_time":"03:52:16","stop_id":17771,"stop_sequence":14,"stop_headsign":null,"name":"Broadway
-        \u0026 Speer Blvd"},{"trip_id":109470740,"arrival_time":"03:52:44","departure_time":"03:52:44","stop_id":17772,"stop_sequence":15,"stop_headsign":null,"name":"Broadway
-        \u0026 W 5th Ave"},{"trip_id":109470740,"arrival_time":"03:53:13","departure_time":"03:53:13","stop_id":17773,"stop_sequence":16,"stop_headsign":null,"name":"Broadway
-        \u0026 4th Ave"},{"trip_id":109470740,"arrival_time":"03:54:09","departure_time":"03:54:09","stop_id":17774,"stop_sequence":17,"stop_headsign":null,"name":"Broadway
-        \u0026 W 1st Ave"},{"trip_id":109470740,"arrival_time":"03:54:34","departure_time":"03:54:34","stop_id":17775,"stop_sequence":18,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Ellsworth Ave"},{"trip_id":109470740,"arrival_time":"03:54:59","departure_time":"03:54:59","stop_id":17776,"stop_sequence":19,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Bayaud Ave"},{"trip_id":109470740,"arrival_time":"03:55:25","departure_time":"03:55:25","stop_id":18461,"stop_sequence":20,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Cedar Ave"},{"trip_id":109470740,"arrival_time":"03:56:00","departure_time":"03:56:00","stop_id":12464,"stop_sequence":21,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Alameda Ave"},{"trip_id":109470740,"arrival_time":"03:57:13","departure_time":"03:57:13","stop_id":21472,"stop_sequence":22,"stop_headsign":null,"name":"Broadway
-        \u0026 W Center Ave"},{"trip_id":109470740,"arrival_time":"03:57:53","departure_time":"03:57:53","stop_id":12519,"stop_sequence":23,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Exposition Ave"},{"trip_id":109470740,"arrival_time":"03:58:16","departure_time":"03:58:16","stop_id":34429,"stop_sequence":24,"stop_headsign":null,"name":"Broadway
-        \u0026 Ohio Ave"},{"trip_id":109470740,"arrival_time":"03:59:00","departure_time":"04:01:00","stop_id":26278,"stop_sequence":25,"stop_headsign":null,"name":"I-25
-        \u0026 Broadway Station Gate B1"},{"trip_id":109470740,"arrival_time":"04:02:05","departure_time":"04:02:05","stop_id":12526,"stop_sequence":26,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Tennessee Ave"},{"trip_id":109470740,"arrival_time":"04:02:28","departure_time":"04:02:28","stop_id":12564,"stop_sequence":27,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Mississippi Ave"},{"trip_id":109470740,"arrival_time":"04:03:08","departure_time":"04:03:08","stop_id":12556,"stop_sequence":28,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Louisiana Ave"},{"trip_id":109470740,"arrival_time":"04:03:49","departure_time":"04:03:49","stop_id":12521,"stop_sequence":29,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Florida Ave"},{"trip_id":109470740,"arrival_time":"04:04:21","departure_time":"04:04:21","stop_id":12538,"stop_sequence":30,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Mexico Ave"},{"trip_id":109470740,"arrival_time":"04:04:52","departure_time":"04:04:52","stop_id":12501,"stop_sequence":31,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Colorado Ave"},{"trip_id":109470740,"arrival_time":"04:05:12","departure_time":"04:05:12","stop_id":12541,"stop_sequence":32,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Jewell Ave"},{"trip_id":109470740,"arrival_time":"04:06:00","departure_time":"04:06:00","stop_id":12517,"stop_sequence":33,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Evans Ave"},{"trip_id":109470740,"arrival_time":"04:06:47","departure_time":"04:06:47","stop_id":12536,"stop_sequence":34,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Iliff Ave"},{"trip_id":109470740,"arrival_time":"04:07:30","departure_time":"04:07:30","stop_id":12533,"stop_sequence":35,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Harvard Ave"},{"trip_id":109470740,"arrival_time":"04:08:19","departure_time":"04:08:19","stop_id":12617,"stop_sequence":36,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Yale Ave"},{"trip_id":109470740,"arrival_time":"04:09:03","departure_time":"04:09:03","stop_id":12481,"stop_sequence":37,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Bates Ave"},{"trip_id":109470740,"arrival_time":"04:09:51","departure_time":"04:09:51","stop_id":12511,"stop_sequence":38,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Dartmouth Ave"},{"trip_id":109470740,"arrival_time":"04:10:43","departure_time":"04:10:43","stop_id":22268,"stop_sequence":39,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Floyd Ave"},{"trip_id":109470740,"arrival_time":"04:11:10","departure_time":"04:11:10","stop_id":20093,"stop_sequence":40,"stop_headsign":null,"name":"Englewood
-        Pkwy \u0026 S Acoma St"},{"trip_id":109470740,"arrival_time":"04:12:03","departure_time":"04:12:03","stop_id":13514,"stop_sequence":41,"stop_headsign":null,"name":"S
-        Elati St \u0026 Englewood Pkwy"},{"trip_id":109470740,"arrival_time":"04:14:00","departure_time":"04:28:00","stop_id":26179,"stop_sequence":42,"stop_headsign":null,"name":"Englewood
-        Station Gate G"},{"trip_id":109470740,"arrival_time":"04:29:17","departure_time":"04:29:17","stop_id":20171,"stop_sequence":43,"stop_headsign":null,"name":"S
-        Elati St \u0026 Englewood Pkwy"},{"trip_id":109470740,"arrival_time":"04:30:16","departure_time":"04:30:16","stop_id":20094,"stop_sequence":44,"stop_headsign":null,"name":"Englewood
-        Pkwy \u0026 S Acoma St"},{"trip_id":109470740,"arrival_time":"04:30:57","departure_time":"04:30:57","stop_id":12530,"stop_sequence":45,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Hampden Ave"},{"trip_id":109470740,"arrival_time":"04:31:46","departure_time":"04:31:46","stop_id":12547,"stop_sequence":46,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Kenyon Ave"},{"trip_id":109470740,"arrival_time":"04:32:34","departure_time":"04:32:34","stop_id":12558,"stop_sequence":47,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Mansfield Ave"},{"trip_id":109470740,"arrival_time":"04:33:21","departure_time":"04:33:21","stop_id":12573,"stop_sequence":48,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Oxford Ave"},{"trip_id":109470740,"arrival_time":"04:34:10","departure_time":"04:34:10","stop_id":12584,"stop_sequence":49,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Quincy Ave"},{"trip_id":109470740,"arrival_time":"04:34:58","departure_time":"04:34:58","stop_id":12595,"stop_sequence":50,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Stanford Ave"},{"trip_id":109470740,"arrival_time":"04:35:47","departure_time":"04:35:47","stop_id":12607,"stop_sequence":51,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Union Ave"},{"trip_id":109470740,"arrival_time":"04:36:35","departure_time":"04:36:35","stop_id":12497,"stop_sequence":52,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Chenango Ave"},{"trip_id":109470740,"arrival_time":"04:37:31","departure_time":"04:37:31","stop_id":12483,"stop_sequence":53,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Belleview Ave"},{"trip_id":109470740,"arrival_time":"04:37:54","departure_time":"04:37:54","stop_id":12494,"stop_sequence":54,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Centennial Ave"},{"trip_id":109470740,"arrival_time":"04:38:32","departure_time":"04:38:32","stop_id":22056,"stop_sequence":55,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Rafferty Gardens Ave"},{"trip_id":109470740,"arrival_time":"04:39:02","departure_time":"04:39:02","stop_id":12443,"stop_sequence":56,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Powers Ave"},{"trip_id":109470740,"arrival_time":"04:40:00","departure_time":"04:40:00","stop_id":12553,"stop_sequence":57,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Littleton Blvd"},{"trip_id":109470740,"arrival_time":"04:40:27","departure_time":"04:40:27","stop_id":12486,"stop_sequence":58,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Broadmoor Dr"},{"trip_id":109470740,"arrival_time":"04:40:48","departure_time":"04:40:48","stop_id":12476,"stop_sequence":59,"stop_headsign":null,"name":"S
-        Broadway \u0026 S Bannock St"},{"trip_id":109470740,"arrival_time":"04:41:03","departure_time":"04:41:03","stop_id":20637,"stop_sequence":60,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Fair Ave"},{"trip_id":109470740,"arrival_time":"04:41:16","departure_time":"04:41:16","stop_id":12488,"stop_sequence":61,"stop_headsign":null,"name":"S
-        Broadway \u0026 Panama Dr"},{"trip_id":109470740,"arrival_time":"04:41:38","departure_time":"04:41:38","stop_id":12615,"stop_sequence":62,"stop_headsign":null,"name":"S
-        Broadway \u0026 Weaver Pl"},{"trip_id":109470740,"arrival_time":"04:42:00","departure_time":"04:42:00","stop_id":12468,"stop_sequence":63,"stop_headsign":null,"name":"S
-        Broadway \u0026 Arapahoe Rd"},{"trip_id":109470740,"arrival_time":"04:42:13","departure_time":"04:42:13","stop_id":12596,"stop_sequence":64,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Sterne Pkwy"},{"trip_id":109470740,"arrival_time":"04:42:24","departure_time":"04:42:24","stop_id":18836,"stop_sequence":65,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Ridge Rd"},{"trip_id":109470740,"arrival_time":"04:42:33","departure_time":"04:42:33","stop_id":18837,"stop_sequence":66,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Davies Ave"},{"trip_id":109470740,"arrival_time":"04:42:44","departure_time":"04:42:44","stop_id":24176,"stop_sequence":67,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Fremont Pl"},{"trip_id":109470740,"arrival_time":"04:43:02","departure_time":"04:43:02","stop_id":17609,"stop_sequence":68,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Fremont Ave"},{"trip_id":109470740,"arrival_time":"04:43:18","departure_time":"04:43:18","stop_id":19144,"stop_sequence":69,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Dry Creek Rd"},{"trip_id":109470740,"arrival_time":"04:43:41","departure_time":"04:43:41","stop_id":22217,"stop_sequence":70,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Jamison Ave"},{"trip_id":109470740,"arrival_time":"04:44:00","departure_time":"04:44:00","stop_id":20446,"stop_sequence":71,"stop_headsign":null,"name":"S
-        Broadway \u0026 W Mineral Ave"},{"trip_id":109470740,"arrival_time":"04:44:17","departure_time":"04:44:17","stop_id":22453,"stop_sequence":72,"stop_headsign":null,"name":"S
-        Broadway \u0026 S Grant Way"},{"trip_id":109470740,"arrival_time":"04:44:32","departure_time":"04:44:32","stop_id":24460,"stop_sequence":73,"stop_headsign":null,"name":"S
-        Broadway \u0026 Southpark Dr"},{"trip_id":109470740,"arrival_time":"04:44:45","departure_time":"04:44:45","stop_id":20079,"stop_sequence":74,"stop_headsign":null,"name":"S
-        Broadway \u0026 W County Line Rd"},{"trip_id":109470740,"arrival_time":"04:45:21","departure_time":"04:45:21","stop_id":25185,"stop_sequence":75,"stop_headsign":null,"name":"Centennial
-        Blvd \u0026 S Broadway"},{"trip_id":109470740,"arrival_time":"04:45:30","departure_time":"04:45:30","stop_id":26613,"stop_sequence":76,"stop_headsign":null,"name":"Centennial
-        Blvd \u0026 S Broadway"},{"trip_id":109470740,"arrival_time":"04:45:55","departure_time":"04:45:55","stop_id":25931,"stop_sequence":77,"stop_headsign":null,"name":"Centennial
-        Blvd \u0026 Plaza Dr"},{"trip_id":109470740,"arrival_time":"04:46:07","departure_time":"04:46:07","stop_id":26614,"stop_sequence":78,"stop_headsign":null,"name":"Plaza
-        Dr \u0026 Centennial Blvd"},{"trip_id":109470740,"arrival_time":"04:47:00","departure_time":"04:47:00","stop_id":26245,"stop_sequence":79,"stop_headsign":null,"name":"Ridgeline
-        Blvd \u0026 Bluepoint Rd"},{"trip_id":109470740,"arrival_time":"04:47:49","departure_time":"04:47:49","stop_id":22906,"stop_sequence":80,"stop_headsign":null,"name":"8700
-        Block Ridgeline Blvd"},{"trip_id":109470740,"arrival_time":"04:49:17","departure_time":"04:49:17","stop_id":22907,"stop_sequence":81,"stop_headsign":null,"name":"8900
-        Block Ridgeline Blvd"},{"trip_id":109470740,"arrival_time":"04:51:32","departure_time":"04:51:32","stop_id":24947,"stop_sequence":82,"stop_headsign":null,"name":"Ridgeline
-        Blvd \u0026 Highlands Ranch Pkwy"},{"trip_id":109470740,"arrival_time":"04:53:00","departure_time":"04:53:00","stop_id":26262,"stop_sequence":83,"stop_headsign":null,"name":"Highlands
-        Ranch Town Center PnR Gate B"}]}'
-    http_version: 
-  recorded_at: Thu, 19 Nov 2015 08:44:56 GMT
+  recorded_at: Thu, 19 Nov 2015 16:46:39 GMT
 recorded_with: VCR 2.9.3
