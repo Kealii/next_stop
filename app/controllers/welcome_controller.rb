@@ -19,12 +19,7 @@ class WelcomeController < ApplicationController
       stop_times = JSON.parse(trip_response.body)['stop_times'].map do |stop_time|
         StopTime.new(stop_time['departure_time'], stop_time['name'], stop_time['stop_id'])
       end
-
-      Trip.new(trip_json['trip_id'], stop_times, trip_json['service_id'])
-    end
-
-    @stops = route_json['stops'].map do |stop|
-      Stop.new(stop['stop_id'], stop['stop_name'])
+      Trip.new(trip_json['trip_id'], stop_times)
     end
   end
 
@@ -34,9 +29,9 @@ class WelcomeController < ApplicationController
     response = HTTParty.get("#{NEXT_STOP}/search", query: {stop_id: stop_id, departure_time: departure_time})
 
     @routes = JSON.parse(response.body).map do |route_json|
-      r = Route.new(route_json['route_id'], route_json['route_short_name'])
-      r.departure_time = route_json['departure_time']
-      r
+      route = Route.new(route_json['route_id'], route_json['route_short_name'])
+      route.departure_time = route_json['departure_time']
+      route
     end
   end
 end
