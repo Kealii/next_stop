@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  helper_method :response_body, :routes
 
   NEXT_STOP = "http://localhost:3001/api/v1"
 
