@@ -14,7 +14,7 @@ class RoutesController < ApplicationController
       trip_response = HTTParty.get("#{NEXT_STOP}/trips/#{trip_json['trip_id']}")
       stop_times = json_body(trip_response)['stop_times'].map do |stop_time_json|
         departure_time = Time.parse(stop_time_json['departure_time']).strftime('%l:%M %P')
-        path = near_by_path(stop_id: stop_time_json['stop_id'], departure_time: stop_time_json['departure_time'])
+        path = near_by_path(stop_id: stop_time_json['stop_id'], departure_time: stop_time_json['departure_time'], stop_name: stop_time_json['name'])
         StopTime.new(departure_time, stop_time_json['name'], stop_time_json['stop_id'], path)
       end
       Trip.new(trip_json['trip_id'], stop_times)

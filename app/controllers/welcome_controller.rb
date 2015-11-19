@@ -7,6 +7,7 @@ class WelcomeController < ApplicationController
 
   def near_by
     stop_id = params[:stop_id]
+    @stop_name = params[:stop_name]
     departure_time = params[:departure_time]
     response = HTTParty.get("#{NEXT_STOP}/search", query: {stop_id: stop_id, departure_time: departure_time})
 

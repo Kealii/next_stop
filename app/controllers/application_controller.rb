@@ -3,11 +3,6 @@ class ApplicationController < ActionController::Base
 
   NEXT_STOP = "http://localhost:3001/api/v1"
 
-  def single_route
-    route_id = params[:route][:id]
-    HTTParty.get("#{NEXT_STOP}/routes/#{route_id}")
-  end
-
   def routes
     HTTParty.get("#{NEXT_STOP}/routes")
   end
