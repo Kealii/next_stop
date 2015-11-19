@@ -4,8 +4,11 @@
 @import 'progressBar';
 
 .trip {
-  width: 300px;
+  width: 260px;
   float: left;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 15px;
   .stopTime {
     list-style: none;
 
@@ -13,10 +16,18 @@
       font-weight: bold;
     }
   }
+
+  &:first-child {
+    padding-left: 0;
+  }
 }
 
 .input-sm {
   color: black;
+}
 
+#trips {
+  margin: 0 auto;
+  width: 900px;
 }
 
